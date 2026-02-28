@@ -13,13 +13,16 @@ export default function Navbar(){
 
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
-    return (<div className='w-full absolute flex top-[33px] z-90 items-center justify-center'>
+    return (<div className='w-full absolute top-[33px] z-90 items-center justify-center'>
         <header className="md:flex">
-            <img
-            className="w-full h-full"
-            alt="Adwa Logo"
-            src="/adwa-logo.svg"
-            />
+            <a href="/" className="fixed top-[40px] left-[10%]">
+                <img
+                className="h-full md:h-15 w-auto"
+                alt="Adwa Logo"
+                src="/adwa-logo.svg"
+                />
+            </a>
+            
         </header>
 
         {/* Bar with links */}
