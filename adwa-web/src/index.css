@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Raleway;
-    src: url("../src/assets/fonts/Raleway-Regular.ttf");
+    src: url("../fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
@@ -33,4 +33,25 @@
     rgba(28, 57, 142, 0.20) 100%
     ), #000;
     
+}
+
+.swiper_container {
+    width:100%;
+    height: 52rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    flex: 0 0 auto;
+    width: 33.333%; 
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto !important;
+    transform: scale(0.85);
+}
+
+.swiper-slide-active {
+  transform: scale(1);
 }
