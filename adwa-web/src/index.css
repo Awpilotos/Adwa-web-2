@@ -1,4 +1,15 @@
-@import "tailwindcss";
+
+@font-face {
+    font-family: Raleway;
+    src: url("../src/assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../src/assets/fonts/Nunito-Regular.ttf");
+}
+
+@import 'tailwindcss';
 
 @theme {
     --gris: rgba(56, 72, 90, 1);
@@ -6,5 +17,20 @@
     --negro: rgba(37, 37, 37, 1);
     --principal: rgba(151, 0, 255, 1);
     --secundario: rgba(0, 183, 159, 1);
+
+    --font-raleway: Raleway, "sans-serif";
+    --font-nunito: Nunito, "sans-serif";
 }
 
+:root{
+    font-family: Raleway, "sans-serif";
+
+    background: linear-gradient(
+    315deg,
+    #271633 0%,
+    rgba(89, 22, 139, 0.20) 19.71%,
+    #271633 72.12%,
+    rgba(28, 57, 142, 0.20) 100%
+    ), #000;
+    
+}
