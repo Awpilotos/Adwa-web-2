@@ -48,11 +48,12 @@ export default function SpotSection() {
           Publicitarios
         </h2>
 
-        <div /*className="w-full flex justify-center"*/ className='container'>
+        <div className='container'>
 
           <Swiper
             className='swiper-container'
             effect="coverflow"
+            slideToClickedSlide={true}
             centeredSlides={true}
             slidesPerView={2}
             initialSlide={1}
