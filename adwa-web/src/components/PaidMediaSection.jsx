@@ -1,5 +1,6 @@
 export default function PaidMediaSection(){
-    const statistics = [
+  return <div></div>
+    /*const statistics = [
     {
       id: 1,
       value: "+50",
@@ -229,5 +230,5 @@ export default function PaidMediaSection(){
         />
       </div>
     </section>
-  );
+  );*/
 }

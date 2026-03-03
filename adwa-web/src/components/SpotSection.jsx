@@ -72,7 +72,7 @@ export default function SpotSection() {
             {videos.map((video, i) => (
               <SwiperSlide key={i}>
                 <video
-                  className="!w-[800px] !h-[500px] object-cover"
+                  className="!w-[888px] !h-[500px] object-cover"
                   src={video.src}
                   autoPlay
                   muted
