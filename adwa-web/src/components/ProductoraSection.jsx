@@ -1,19 +1,34 @@
 import video_4 from "../assets/videos/tras_camara.mp4";
+import MarqueeItem from "./MarqueeItem";
 
 export default function ProductoraSection(){
-    return <div className="min-h-screen flex justify-center items-center">
-      <div className="relative w-full h-screen flex max-w-[1400px] px-8 mt-[61px] mb-[151px] items-center justify-center">
+    const images = [
+        "../../img/2btube.png",
+        "../../img/autoeastern.png",
+        "../../img/ciot.png",
+        "../../img/estudiotess.png",
+        "../../img/funkyfish.png",
+        "../../img/incoop.png",
+        "../../img/livin.png",
+        "../../img/opteam.png",
+        "../../img/pical.png",
+        "../../img/sg.png",
+    ];
+
+    return <div className="min-h-screen flex flex-wrap justify-center items-center">
+      <div className="relative w-full h-screen flex max-w-[1400px] px-8 mt-[61px] mb-[40px] items-center justify-center">
         <svg
-            className="absolute inset-0 z-0 w-full"
+            className="absolute inset-0 z-0 w-full h-full"
             viewBox="0 0 1438 1729"
+            preserveAspectRatio="xMidYMid"
             xmlns="http://www.w3.org/2000/svg"
         >
             <defs>
             <clipPath id="videoClip">
                 {/* your white rectangles */}
-                <rect width="297" height="1101" x="222" y="355" />
-                <rect width="297" height="1597" x="571" y="47" />
-                <rect width="297" height="1086" x="920" y="301" />
+                <rect width="297" height="1101" x="222" y="355"/>
+                <rect width="297" height="1597" x="571" y="47"/>
+                <rect width="297" height="1086" x="920" y="301"/>
             </clipPath>
             </defs>
 
@@ -50,6 +65,11 @@ export default function ProductoraSection(){
             Creativa
             </div>
         </div>
+
+        
+    </div>
+    <div className="bg-[#9700FF] h-[350px] items-center justify-center flex mx-auto overflow-hidden select-none">
+      <MarqueeItem images={images} from={0} to={"-100%"} />
     </div>
 </div>;
 }
