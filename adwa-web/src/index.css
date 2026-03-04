@@ -11,7 +11,7 @@
 
 @import 'tailwindcss';
 
-@theme {
+/*@theme {
     --gris: rgba(56, 72, 90, 1);
     --morado-formulario: rgba(112, 16, 178, 0.2);
     --negro: rgba(37, 37, 37, 1);
@@ -20,7 +20,7 @@
 
     --font-raleway: Raleway, "sans-serif";
     --font-nunito: Nunito, "sans-serif";
-}
+}*/
 
 :root{
     font-family: Raleway, "sans-serif";
