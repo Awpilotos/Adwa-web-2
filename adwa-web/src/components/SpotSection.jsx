@@ -26,27 +26,26 @@ export default function SpotSection() {
   ];
   
   return (
-    <div className="min-h-screen flex justify-center">
-      <div className="w-full max-w-[1400px] px-8 mt-[61px] mb-[151px]">
+    <div className="section-wrapper-auto justify-center">
+      <div className="section-container-large">
         
-        <h1 className="text-white text-[80px] leading-[80px] tracking-[0.26px] text-left">
+        <h2 className="text-white text-[80px] leading-[80px] tracking-[0.26px] text-left">
           Spots
-        </h1>
-
-        <h2
-          className="
-            inline-block
-            text-[90px]
-            leading-[90px]
-            tracking-[0.26px]
-            bg-gradient-to-r
-            from-[#9700FF]
-            to-[#00B79F]
-            bg-clip-text
-            text-transparent"
-          >
-          Publicitarios
         </h2>
+        <h3
+          className="
+              inline-block
+              text-[90px]
+              leading-[90px]
+              tracking-[0.26px]
+              bg-gradient-to-r
+              from-[#9700FF]
+              to-[#00B79F]
+              bg-clip-text
+              text-transparent"
+        >
+            Publicitarios
+        </h3>
 
         <div className='container'>
 

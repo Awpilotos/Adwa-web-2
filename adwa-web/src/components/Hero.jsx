@@ -1,11 +1,9 @@
 
 export default function Hero() {
   return (
-    <section className="
+    <div className="
       relative 
-      w-full 
-      min-h-screen
-      flex 
+      section-wrapper 
       items-center 
       justify-center 
       bg-[url('/img/dark-blue-gradient.png')] 
@@ -39,6 +37,6 @@ export default function Hero() {
         </button>
 
       </div>
-    </section>
+    </div>
   );
 }

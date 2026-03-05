@@ -15,8 +15,8 @@ export default function ProductoraSection(){
         "../../img/sg.png",
     ];
 
-    return <div className="min-h-screen flex flex-wrap justify-center items-center">
-      <div className="relative w-full h-screen flex max-w-[1400px] px-8 mt-[61px] mb-[40px] items-center justify-center">
+    return <div className="section-wrapper flex-wrap justify-center items-center">
+      <div className="relative section-container-large h-screen flex justify-center items-center">
         <svg
             className="absolute inset-0 z-0 w-full h-full"
             viewBox="0 0 1438 1729"

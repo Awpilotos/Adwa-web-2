@@ -1,8 +1,8 @@
 export default function CampanaSection(){
-    return <div className="min-h-screen flex flex-wrap items-center">
-      <div className="w-full h-screen flex max-w-[1200px] px-8 mt-[85px] mb-[40px] justify-start">
-        <div className="">
-            <h2 className="w-full text-white text-[80px] leading-[80px] tracking-[0.26px] text-left">
+    return <div className="section-wrapper justify-center">
+      <div className="section-container-large">
+        <div>
+            <h2 className="text-white text-[80px] leading-[80px] tracking-[0.26px] text-left">
                 Campañas
             </h2>
             <h3
@@ -17,7 +17,7 @@ export default function CampanaSection(){
                 bg-clip-text
                 text-transparent"
             >
-            Publicitarias
+                Publicitarias
             </h3>
         </div>
         <div>

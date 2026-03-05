@@ -124,7 +124,7 @@ export default function PaidMediaSection(){
       { name: "Estudio Tess_", opacity: "text-[#ffffff80]" },
     ];
 
-    return <div className="min-h-screen flex flex-col justify-center items-center">
+    return <div className="section-wrapper flex-col justify-center items-center">
       <div className="w-full max-w-[1000px] px-8 mt-[61px] mb-[151px]">
         <ImageList variant='masonry' cols={4} gap={8}>
             <ImageListItem >
