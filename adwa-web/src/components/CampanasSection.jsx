@@ -6,12 +6,13 @@ export default function CampanaSection(){
       <div className="section-container-large flex flex-col lg:flex-row items-stretch gap-8 lg:gap-16">
         <div className="flex flex-col text-left justify-between">
             
-            <h2 className="text-white text-[50px] leading-[50px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left">
-                Campañas
+            <h2 className="text-white text-[50px] leading-[50px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left mb-[100px] lg:mb-0">
+                Campañas <br/>
                 <span className="relative inline-block">
+                    
                     <span
                         className="
-                        inline-block
+                        z-10
                         text-[60px] leading-[55px] lg:text-[90px] lg:leading-[90px]
                         tracking-[0.26px]
                         bg-gradient-to-r
@@ -23,9 +24,9 @@ export default function CampanaSection(){
                     Publicitarias
                     </span>
                     <img
-                        src="../../img/gradiente_horizontal_rosa_azul.png"
+                        src="../../img/gradiente_horizontal_grande.png"
                         alt=""
-                        className="absolute left-0 bottom-[-60px] w-full h-auto pointer-events-none"
+                        className="absolute left-0 bottom-[-60px] lg:bottom-[-90px] w-full h-auto z-0"
                     />
                 </span>
             </h2>

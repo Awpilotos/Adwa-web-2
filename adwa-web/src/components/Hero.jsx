@@ -4,12 +4,13 @@ export default function Hero() {
     <div className="
       relative 
       section-wrapper 
+      items-center
       bg-[url('/img/dark-blue-gradient.png')] 
       bg-cover 
       bg-center
       mt-[-90px]
     ">
-      <div className="w-full flex flex-col mt-[151px] items-center text-center text-white max-w-4xl mx-auto px-6 gap-10">
+      <div className="w-full flex flex-col items-center text-center text-white max-w-4xl mx-auto px-6 gap-10">
 
         <span className="text-sm font-medium tracking-wide">
           CREATIVIDAD + INTELIGENCIA ARTIFICIAL

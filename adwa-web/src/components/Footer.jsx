@@ -23,13 +23,12 @@ export default function Footer(){
     <footer className="relative w-full h-auto bg-transparent flex flex-col items-center gap-16">
       {/* Header / Title */}
       <div className="flex flex-col items-center gap-3 relative">
-        <h2 className="text-white text-[40px] leading-[40px] lg:text-[90px] lg:leading-[90px] font-normal tracking-[0.26px]  whitespace-nowrap">
-          Hablemos de tu
-        </h2>
-        <h2 className="bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]
-        [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent]
-        text-transparent text-[50px] leading-[50px] lg:text-[100px] lg:leading-[100px] font-normal tracking-[0.26px]  whitespace-nowrap">
-          Proyecto
+        <h2 className="text-white text-[40px] leading-[40px] lg:text-[80px] lg:leading-[80px] font-normal tracking-[0.26px]">
+          Hablemos de tu{" "}
+          <br className="md:hidden"/>
+          <span className="gradient-text lg:text-[90px] lg:leading-[90px]">
+          proyecto
+          </span>
         </h2>
       </div>
 
