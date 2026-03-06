@@ -71,6 +71,10 @@ body{
   position: relative;
 }
 
+.swiper {
+  width: 100%;
+}
+
 .font-secondary {
     font-family: Inter, sans-serif;
 }

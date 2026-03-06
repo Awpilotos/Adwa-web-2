@@ -62,20 +62,38 @@ export default function IASection(){
         },
     ];
 
-    return <div className="mb-12">
-        <Swiper
+    return <div className="section-wrapper-auto mb-20 justify-center">
+        <div className="section-container-large">
+            <h2 className="text-white text-[55px] leading-[55px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left">
+            La <span className="text-[#9700FF]"> IA </span>sin creatividad humana,
+                <span
+                    className="
+                    inline-block
+                    tracking-[0.26px]
+                    bg-gradient-to-r
+                    from-[#9700FF]
+                    to-[#00B79F]
+                    bg-clip-text
+                    text-transparent"
+                >
+                No conecta
+                </span>
+            </h2>
+
+            <Swiper
+            className=".swiper-container"
             effect="coverflow"
             slideToClickedSlide={true}
             centeredSlides={true}
             slidesPerView={2}
             initialSlide={1}
-            spaceBetween={100}
+            spaceBetween={125}
             loop={true}
             coverflowEffect={{
               rotate: 0,
               stretch: 0,
-              depth: 200,
-              modifier: 2.5,
+              depth: 150,
+              modifier: 2,
               slideShadows: false,
             }}
             modules={[EffectCoverflow]}
@@ -92,6 +110,8 @@ export default function IASection(){
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+        
 
 
     </div>;
