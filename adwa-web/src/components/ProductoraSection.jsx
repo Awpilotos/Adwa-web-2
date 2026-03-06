@@ -15,8 +15,8 @@ export default function ProductoraSection(){
         "../../img/sg.png",
     ];
 
-    return <div className="section-wrapper flex-wrap justify-center items-center">
-      <div className="relative section-container-large h-screen flex justify-center items-center">
+    return <div className="section-wrapper-auto flex-wrap justify-center items-center">
+      <div className="relative section-container-large aspect-[1438/1729] sm:aspect-[1438/1300] flex justify-center items-center">
         <svg
             className="absolute inset-0 z-0 w-full h-full"
             viewBox="0 0 1438 1729"
@@ -52,7 +52,7 @@ export default function ProductoraSection(){
         </svg>
 
         <div className="relative z-10 flex flex-col items-center text-center">
-            <h2 className="mt-[-1px] font-normal text-white text-[85px] tracking-[0.26px] leading-[90px]">
+            <h2 className="mt-[-1px] font-normal text-white text-[55px] leading-[50px] lg:text-[85px] lg:leading-[90px] tracking-[0.26px] ">
             Productora aliada
             </h2>
 
@@ -60,7 +60,7 @@ export default function ProductoraSection(){
             className="bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]
             [-webkit-background-clip:text] bg-clip-text
             [-webkit-text-fill-color:transparent]
-            text-[95px] tracking-[0.26px] leading-[100px] font-normal"
+            text-[60px] leading-[65px] lg:text-[95px] lg:leading-[100px] tracking-[0.26px]  font-normal"
             >
             Creativa
             </div>

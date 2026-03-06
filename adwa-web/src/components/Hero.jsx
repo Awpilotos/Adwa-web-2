@@ -4,26 +4,24 @@ export default function Hero() {
     <div className="
       relative 
       section-wrapper 
-      items-center 
-      justify-center 
       bg-[url('/img/dark-blue-gradient.png')] 
       bg-cover 
       bg-center
       mt-[-90px]
     ">
-      <div className="flex flex-col mt-[100px] items-center text-center text-white max-w-4xl px-6 gap-10">
+      <div className="w-full flex flex-col mt-[151px] items-center text-center text-white max-w-4xl mx-auto px-6 gap-10">
 
         <span className="text-sm font-medium tracking-wide">
           CREATIVIDAD + INTELIGENCIA ARTIFICIAL
         </span>
 
-        <h1 className="text-[70px] leading-[75px] font-normal">
+        <h1 className="text-[45px] leading-[55px] lg:text-[70px] lg:leading-[75px] font-normal">
           TU ERES EL <br />
           <span className="font-bold">PROTAGONISTA</span> <br />
           DE TU MARCA
         </h1>
 
-        <p className="max-w-2xl">
+        <p className="max-w-2xl text-[16px] lg:text-[20px]">
           Diseñamos tu estrategia de liderazgo digital, te entrenamos<br/> en
           comunicación auténtica y generamos un impacto<br/> medible en tu industria.
         </p>

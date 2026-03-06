@@ -29,14 +29,13 @@ export default function SpotSection() {
     <div className="section-wrapper-auto justify-center">
       <div className="section-container-large">
         
-        <h2 className="text-white text-[80px] leading-[80px] tracking-[0.26px] text-left">
+        <h2 className="text-white text-[55px] leading-[55px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left">
           Spots
         </h2>
         <h3
           className="
               inline-block
-              text-[90px]
-              leading-[90px]
+              text-[60px] leading-[60px] lg:text-[80px] lg:leading-[80px]
               tracking-[0.26px]
               bg-gradient-to-r
               from-[#9700FF]
@@ -67,7 +66,7 @@ export default function SpotSection() {
             }}
             modules={[EffectCoverflow]}
             style={{ width: "100%", maxWidth: "1400px" }}
-          >
+          > 
             {videos.map((video, i) => (
               <SwiperSlide key={i}>
                 <video

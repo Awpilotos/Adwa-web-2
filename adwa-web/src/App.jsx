@@ -7,19 +7,17 @@ import IASection from "./components/IASection";
 import CampanasSection from './components/CampanasSection';
 import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
       <>
-        <Navbar/>
-        <Hero/>
-        <SpotSection/>
-        <PaidMediaSection/>
-        <ProductoraSection/>
-        <CampanasSection/>
-        <IASection/>
-        <Footer/>
+          <Navbar/>
+          <Hero/>
+          <SpotSection/>
+          <PaidMediaSection/>
+          <ProductoraSection/>
+          <CampanasSection/>
+          <IASection/>
+          <Footer/>
       </>
-  )
+  );
 }
-
-export default App
