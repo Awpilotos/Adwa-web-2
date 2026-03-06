@@ -226,11 +226,11 @@ export default function PaidMediaSection(){
       </div>
 
       <div className='w-full items-start '>
-        <h2 className="text-left font-semibold text-white text-[40px] leading-10 tracking-[-0.31px]">
+        <h2 className="text-left font-semibold text-white text-[40px] leading-10 pl-10 lg:pl-20 tracking-[-0.31px]">
           Partners
         </h2>
         
-        <p className="w-full text-center whitespace-nowrap overflow-hidden text-8xl leading-[96px] tracking-[-0.31px]">
+        <p className="w-full text-center whitespace-nowrap overflow-hidden pl-10 lg:pl-20 text-5xl lg:text-8xl leading-[96px] tracking-[-0.31px]">
           {partners.map((partner, index) => (
             <span
               key={index}
