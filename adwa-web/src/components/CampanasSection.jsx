@@ -1,8 +1,8 @@
 
-import video_4 from "../assets/videos/building_freedom.mp4";
+import video_4 from "../assets/videos/campanas_video_celular_rotado.mp4";
 
 export default function CampanaSection(){
-    return <div className="section-wrapper justify-center">
+    return <div className="section-wrapper-auto justify-center mb-14">
       <div className="section-container-large flex flex-col lg:flex-row items-stretch gap-8 lg:gap-16">
         <div className="flex flex-col text-left justify-between">
             
@@ -38,7 +38,13 @@ export default function CampanaSection(){
                 muted
                 loop
                 playsInline
-                className="w-full h-auto rounded-xl"
+                className="
+                w-[830px] 
+                h-auto
+                border-white
+                border-solid
+                border-[1px]
+                rounded-[63px]"
             >
             </video>
         </div>
@@ -46,7 +52,10 @@ export default function CampanaSection(){
             <img 
                 src="../../img/mobile-mockup.png" 
                 alt="Campaña" 
-                className="max-w-full h-auto object-contain"
+                className="
+                max-w-full 
+                h-auto
+                bject-contain"
             />
         </div>
 
