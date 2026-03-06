@@ -3,17 +3,17 @@ import Iframe from 'react-iframe';
 export default function Footer(){
   const contactInfo = [
     {
-      icon: "https://c.animaapp.com/6R4bwcvr/img/contact.svg",
+      icon: "../../img/correo.svg",
       label: "Email",
       value: "info@adwa.com.ec",
     },
     {
-      icon: "https://c.animaapp.com/6R4bwcvr/img/contact-1.svg",
+      icon: "../../img/telefono.svg",
       label: "Teléfono",
       value: "+593998115348",
     },
     {
-      icon: "https://c.animaapp.com/6R4bwcvr/img/contact-2.svg",
+      icon: "../../img/direccion.svg",
       label: "Ubicación",
       value: "Quito, Ecuador",
     },
@@ -33,7 +33,7 @@ export default function Footer(){
       </div>
 
       {/* Contenido principal */}
-      <div className="flex flex-col lg:flex-row w-full max-w-[1280px] items-start md:items-center gap-12 relative">
+      <div className="flex flex-col lg:flex-row w-full max-w-[1280px] items-stretch gap-12 relative">
         {/* Informacion de contacto*/}
         <aside className="flex flex-col items-start gap-6 relative w-full max-w-[616px] px-12">
           <h3 className="font-medium text-white text-3xl tracking-[0.40px] leading-9">
@@ -44,7 +44,7 @@ export default function Footer(){
             en contactarnos por cualquiera de estos medios.
           </p>
 
-          <address className="flex flex-col items-start gap-6 relative w-full not-italic">
+          <address className="flex flex-col gap-6 relative w-full">
             {contactInfo.map((contact, index) => (
               <div key={index} className="flex items-center gap-4 relative w-full">
                 <img className="relative w-12 h-12" alt={contact.label} src={contact.icon} />
@@ -72,7 +72,7 @@ export default function Footer(){
             <img
               className="h-12 relative w-full"
               alt="Redes sociales"
-              src="https://c.animaapp.com/6R4bwcvr/img/container.svg"
+              src="../../img/redes_sociales.svg"
             />
           </div>
         </aside>
@@ -80,14 +80,14 @@ export default function Footer(){
         {/* Formulario de contacto */}
         <div className="flex flex-col w-full max-w-[616px] bg-transparent relative">
           {/* Titulo */}
-          <div className="w-full mb-2">
+          <div className="w-full mb-1">
             <p className="font-normal text-white text-xl text-center leading-7">
               ¿Tienes una idea? Nos encantaría escucharla <br />y ayudarte a hacerla realidad.
             </p>
           </div>
 
-          {/* Iframe*/}
-          <div className="w-full relative">
+          {/* Iframe formulario Opteam*/}
+          <div className="w-full relative" >
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/yM2UktVVeCDmxW9hLlmu"
               style={{ width: "100%", minHeight: "500px", border: "none", borderRadius: "3px" }}
