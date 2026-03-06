@@ -17,48 +17,64 @@ export default function IASection(){
             overlayImage:"../../img/distrax.png",
             label:"Distrax",
             gradientColor:"from-[#FF6900] to-transparent",
+            gradientTextl: "#FEFFFE",
+            gradientTextr: "#FAB889",
         },
         {
             mainImage:"../../img/nedro_fondo.png",
             overlayImage:"../../img/nedro.png",
             label:"Nedro",
             gradientColor:"from-[#1C6F16] to-transparent",
+            gradientTextl: "#0BDB5A",
+            gradientTextr: "#0F9D8B",
         },
         {
             mainImage:"../../img/prudi_fondo.png",
             overlayImage:"../../img/prudi.png",
             label:"Prudi",
             gradientColor:"from-[#3987A9] to-transparent",
+            gradientTextl: "#77B3CD",
+            gradientTextr: "#B9DEED",
         },
         {
             mainImage:"../../img/negli_fondo.png",
             overlayImage:"../../img/negli.png",
             label:"Negli",
             gradientColor:"from-[#5B0099] to-transparent",
+            gradientTextl: "#D69FFB",
+            gradientTextr: "#9810FA",
         },
         {
             mainImage:"../../img/distrax_fondo.png",
             overlayImage:"../../img/distrax.png",
             label:"Distrax",
             gradientColor:"from-[#FF6900] to-transparent",
+            gradientTextl: "#FEFFFE",
+            gradientTextr: "#FAB889",
         },
         {
             mainImage:"../../img/nedro_fondo.png",
             overlayImage:"../../img/nedro.png",
             label:"Nedro",
             gradientColor:"from-[#1C6F16] to-transparent",
+            gradientTextl: "#0BDB5A",
+            gradientTextr: "#0F9D8B",
         },
         {
             mainImage:"../../img/prudi_fondo.png",
             overlayImage:"../../img/prudi.png",
             label:"Prudi",
             gradientColor:"from-[#3987A9] to-transparent",
+            gradientTextl: "#77B3CD",
+            gradientTextr: "#B9DEED",
         },
         {
             mainImage:"../../img/negli_fondo.png",
             overlayImage:"../../img/negli.png",
             label:"Negli",
             gradientColor:"from-[#5B0099] to-transparent",
+            gradientTextl: "#933AD4",
+            gradientTextr: "#F1DCFF",
         },
     ];
 
@@ -106,6 +122,8 @@ export default function IASection(){
                     overlayImage={personaje.overlayImage}
                     label={personaje.label}
                     gradientColor={personaje.gradientColor}
+                    gradientTextl={personaje.gradientTextl}
+                    gradientTextr={personaje.gradientTextr}
                 />
               </SwiperSlide>
             ))}
