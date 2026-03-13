@@ -116,7 +116,7 @@ export default function Portafolio() {
             </div>
 
             {/* Opteam image (behind phone) */}
-            <div className="absolute hidden md:block top-0 md:right-auto w-[60%] items-end md:left-[35%] z-10">
+            <div className="absolute hidden md:block top-0 md:right-auto w-[60%] items-end md:left-[40%] z-10">
               <img
                 className="w-full object-cover"
                 src="../../img/opteam_image.jpg"
