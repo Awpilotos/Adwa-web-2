@@ -9,8 +9,9 @@ import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import video_1 from "../assets/videos/incoop.mp4";
-import video_2 from '../assets/videos/building_freedom.mp4';
-import video_3 from '../assets/videos/livin.mp4';
+import video_2 from '../assets/videos/adwa_showcase.mp4';
+import video_3 from '../assets/videos/livin_animado.mp4';
+
 import VideoCarousel from './ui/VideoCarousel';
 
 export default function SpotSection() {
