@@ -20,7 +20,7 @@ export default function Footer(){
   ];
 
   return (
-    <footer className="relative w-full h-auto bg-transparent flex flex-col items-center gap-16">
+    <footer className="relative w-full h-auto bg-transparent flex flex-col items-center gap-16 mt-[61px]">
       {/* Header / Title */}
       <div className="flex flex-col items-center gap-3 relative">
         <h2 className="text-white text-[40px] leading-[40px] lg:text-[80px] lg:leading-[80px] font-normal tracking-[0.26px]">
@@ -33,9 +33,9 @@ export default function Footer(){
       </div>
 
       {/* Contenido principal */}
-      <div className="flex flex-col lg:flex-row w-full max-w-[1280px] items-stretch gap-12 relative">
+      <div className="flex flex-col lg:flex-row w-full max-w-[1280px] items-center lg:items-start gap-12 relative">
         {/* Informacion de contacto*/}
-        <aside className="flex flex-col items-start gap-6 relative w-full max-w-[616px] px-12">
+        <aside className="flex flex-col gap-6 relative w-full max-w-[616px] px-12">
           <h3 className="font-medium text-white text-3xl tracking-[0.40px] leading-9">
             Información de Contacto
           </h3>
@@ -48,7 +48,7 @@ export default function Footer(){
             {contactInfo.map((contact, index) => (
               <div key={index} className="flex items-center gap-4 relative w-full">
                 <img className="relative w-12 h-12" alt={contact.label} src={contact.icon} />
-                <div className="flex flex-col items-start relative">
+                <div className="flex flex-col relative">
                   <div className="h-5 relative">
                     <div className="text-[#99a1ae] font-normal text-sm tracking-[-0.15px] leading-5 whitespace-nowrap">
                       {contact.label}
@@ -77,7 +77,7 @@ export default function Footer(){
           </div>
         </aside>
 
-        {/* Formulario de contacto */}
+        {/* Header sobre el formulario */}
         <div className="flex flex-col w-full max-w-[616px] bg-transparent relative">
           {/* Titulo */}
           <div className="w-full mb-1">
@@ -86,7 +86,7 @@ export default function Footer(){
             </p>
           </div>
 
-          {/* Iframe formulario Opteam*/}
+          {/* Iframe formulario Opteam */}
           <div className="w-full relative" >
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/yM2UktVVeCDmxW9hLlmu"
