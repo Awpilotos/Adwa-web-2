@@ -47,7 +47,7 @@ export default function Portafolio() {
           <div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-8 items-center lg:items-start">
 
             {/* Left column: Livin + image */}
-            <div className="flex flex-col gap-6 mt-[70px] md:mt-[90px] lg:mt-[120px] items-center lg:items-start">
+            <div className="flex flex-col gap-6 mt-[66px] md:mt-[90px] lg:mt-[120px] items-center lg:items-start">
               <img
                 className="w-full max-w-[560px] aspect-[1.84] object-cover"
                 src="../../img/livin_fondo.png"
@@ -61,7 +61,7 @@ export default function Portafolio() {
             </div>
 
             {/* Right column: Phone mockup */}
-            <div className="relative flex justify-center items-start w-full overflow-visible -mb-32 z-20">
+            <div className="relative flex justify-center items-start w-full overflow-visible lg:-mb-32 mb-7 z-20">
               <img
                 className="w-full max-w-none object-cover"
                 src="../../img/phone_mockup_livin.png"
@@ -88,10 +88,11 @@ export default function Portafolio() {
               </p>
             </div>
 
-            {/* Right column: Lvin video */}
-            <div className="flex flex-col justify-end gap-6 relative -mt-32 md:-mt-0">
+            {/* Right column: Livin video */}
+            <div className="flex flex-col justify-end gap-6 relative -mt-0 md:-mt-32 lg:-mt-0
+            ">
               <video
-                className="w-full aspect-[1.84] object-cover relative -top-16 md:-top-0"
+                className="w-full aspect-[1.84] object-cover relative -mt-0 lg:-mt-0 md:-mt-12" 
                 src={video_livin}
                 autoPlay
                 muted
@@ -99,7 +100,7 @@ export default function Portafolio() {
                 playsInline
               />
               <p className="text-white text-lg md:text-xl max-w-[520px]">
-                <span className="font-black block">Opteam</span>
+                <span className="font-black block">Livin</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
               </p>
@@ -109,7 +110,7 @@ export default function Portafolio() {
           {/* Opteam Section */}
           <div className="relative mt-[70px] w-full flex justify-center md:justify-start">
 
-            {/* Phone mockup (on top) */}
+            {/* Phone mockup Opteam */}
             <div className="relative z-30 w-full md:w-[60%] flex justify-center">
               <img
                 className="w-full object-cover"
@@ -119,7 +120,7 @@ export default function Portafolio() {
             </div>
 
             {/* Opteam image (behind phone) */}
-            <div className="absolute top-0 md:right-auto w-[65%] items-end md:left-[35%] z-10">
+            <div className="absolute hidden md:block top-0 md:right-auto w-[65%] items-end md:left-[35%] z-10">
               <img
                 className="w-full object-cover"
                 src="../../img/opteam_image.jpg"
@@ -132,10 +133,10 @@ export default function Portafolio() {
           {/* Livin + Opteam Section */}
           <div className="grid grid-cols-1 md:grid-cols-[65%_35%] gap-10 mt-8 items-end">
             
-            {/* Left column: Lvin website */}
-            <div className="flex flex-col justify-end gap-6 relative -mt-35 md:-mt-0">
+            {/* Left column: Livin website video */}
+            <div className="flex flex-col justify-end gap-6 relative -mt-0 md:-mt-35 lg:-mt-0">
               <video
-                className="w-full aspect-[1.84] object-cover relative -top-16 md:-top-0"
+                className="w-full aspect-[1.84] object-cover relative -mt-0 md:-mt-16 lg:-mt-0"
                 src={video_livin}
                 autoPlay
                 muted
@@ -143,7 +144,7 @@ export default function Portafolio() {
                 playsInline
               />
               <p className="text-white text-lg md:text-xl max-w-[520px]">
-                <span className="font-black block">Opteam</span>
+                <span className="font-black block">Livin</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
               </p>
@@ -157,7 +158,7 @@ export default function Portafolio() {
                 alt="Niu campaign"
               />
               <p className="text-white text-lg md:text-xl max-w-[520px]">
-                <span className="font-black block">Livin</span>
+                <span className="font-black block">Opteam</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
               </p>
@@ -166,7 +167,7 @@ export default function Portafolio() {
           </div>
 
           {/* Botón contáctanos*/}
-          <div className="items-center mx-auto mt-10 text-white">
+          <div className="items-center mx-auto mt-20 mb-8 text-white">
             <button className="
             w-auto
             px-6 py-3 
