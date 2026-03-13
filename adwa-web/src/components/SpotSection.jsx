@@ -11,6 +11,7 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import video_1 from "../assets/videos/incoop.mp4";
 import video_2 from '../assets/videos/building_freedom.mp4';
 import video_3 from '../assets/videos/livin.mp4';
+import VideoCarousel from './ui/VideoCarousel';
 
 export default function SpotSection() {
 
@@ -47,40 +48,7 @@ export default function SpotSection() {
         </h3>
 
         <div className='container'>
-
-          <Swiper
-            className='swiper-container'
-            effect="coverflow"
-            slideToClickedSlide={true}
-            centeredSlides={true}
-            slidesPerView={2}
-            initialSlide={1}
-            spaceBetween={0}
-            loop={true}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 150,
-              modifier: 1.5,
-              slideShadows: false,
-            }}
-            modules={[EffectCoverflow]}
-            style={{ width: "100%", maxWidth: "1400px" }}
-          > 
-            {videos.map((video, i) => (
-              <SwiperSlide key={i}>
-                <video
-                  className="!w-[888px] !h-[500px] object-cover"
-                  src={video.src}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          
+          <VideoCarousel videos={videos}/>
         </div>
       </div>
     </div>
