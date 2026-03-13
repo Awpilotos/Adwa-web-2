@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-function RoutingMenuItem({path="/", label=""}) {
+function RoutingMenuItem({path="/", label="", index}) {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -13,6 +13,7 @@ function RoutingMenuItem({path="/", label=""}) {
 
   return (
     <button
+      key={index}
       type="button"
       onClick={handleButtonClick}
       className={`
