@@ -41,91 +41,94 @@ export default function Portafolio() {
       </div>
       {/* Contenido principal */}
       <div className="section-wrapper bg-[linear-gradient(296deg,rgba(39,22,51,1)_18%,rgba(28,57,142,0.2)_100%),linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_100%)]">
-        <div className="section-container_large mx-auto px-6 flex flex-col gap-8">
-          {/*  Primera fila - Livin */}
-          <div className="flex gap-6 lg:grid-cols-2 items-center">
-            {/*  Livin - logo imagen */}
-            <div className="flex flex-col gap-6">
+        <div className="section-container-large mx-auto flex flex-col">
+
+          {/* Livin Section */}
+          <div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-8 items-center lg:items-start">
+
+            {/* Left column: Livin + image */}
+            <div className="flex flex-col gap-6 mt-[70px] md:mt-[90px] lg:mt-[120px] items-center lg:items-start">
               <img
                 className="w-full max-w-[560px] aspect-[1.84] object-cover"
                 src="../../img/livin_fondo.png"
-                alt=""
+                alt="Livin campaign"
               />
-              <p className="text-white text-xl max-w-[520px]">
+              <p className="text-white text-lg md:text-xl max-w-[520px]">
                 <span className="font-black block">Livin</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
               </p>
             </div>
 
-            {/* Telefono mockup */}
-            <div className="flex justify-center items-center">
-              {/* Imagen Livin izquierda */}
-              <div className="relative z-10 -mr-24">
-                <img
-                  className="w-[320px] shadow-xl"
-                  src="https://c.animaapp.com/0cn5eMNB/img/img-5561-1@2x.png"
-                  alt="campaign"
-                />
-              </div>
-
-              {/* Mockup */}
-              <div className="relative z-20 transform scale-[1.35]">
-                <img
-                  className="w-[320px] md:w-[360px]"
-                  src="../../img/iphone_livin_mockup.png"
-                  alt="iphone mockup"
-                />
-              </div>
-
-              {/* Imagen Livin derecha */}
-              <div className="relative z-10 -ml-24">
-                <img
-                  className="w-[320px] shadow-xl"
-                  src="https://c.animaapp.com/0cn5eMNB/img/img-5561-1-1@2x.png"
-                  alt="campaign"
-                />
-              </div>
+            {/* Right column: Phone mockup */}
+            <div className="relative flex justify-center items-start w-full overflow-visible -mb-32 z-20">
+              <img
+                className="w-full max-w-none object-cover"
+                src="../../img/phone_mockup_livin.png"
+                alt="Livin campaign"
+              />
             </div>
+
           </div>
 
-          {/*  Segunda fila - Niu y Opteam */}
-          <div className="flex gap-6 items-center">
-            {/*  Primera columna Niu */}
-            <div className="flex flex-col gap-6">
+          {/* Niu + Livin Section */}
+          <div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-10 items-end">
+
+            {/* Left column: Niu */}
+            <div className="flex flex-col justify-end gap-6 items-center lg:items-start">
               <img
                 className="w-full max-w-[560px] aspect-[1.84] object-cover"
                 src="../../img/niu_fondo.png"
-                alt=""
+                alt="Niu campaign"
               />
-              <p className="text-white text-xl max-w-[520px]">
+              <p className="text-white text-lg md:text-xl max-w-[520px]">
                 <span className="font-black block">Niu</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
               </p>
             </div>
-            {/*  Segunda columna Opteam */}
-            <div className="flex flex-col gap-6">
+
+            {/* Right column: Lvin video */}
+            <div className="flex flex-col justify-end gap-6 relative -mt-32 md:-mt-0">
               <video
-                className="w-full aspect-[1.84] object-cover"
+                className="w-full aspect-[1.84] object-cover relative -top-16 md:-top-0"
                 src={video_livin}
-                alt="Video Livin"
                 autoPlay
                 muted
                 loop
+                playsInline
               />
-              <p className="text-white text-xl max-w-[520px]">
+              <p className="text-white text-lg md:text-xl max-w-[520px]">
                 <span className="font-black block">Opteam</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
               </p>
             </div>
           </div>
-          <div>
+
+          {/* Opteam Section */}
+          <div className="relative mt-[70px] w-full flex justify-center md:justify-start">
+
+            {/* Phone mockup (on top) */}
+            <div className="relative z-30 w-full md:w-[60%] flex justify-center">
+              <img
+                className="w-full object-cover"
+                src="../../img/phone_mockup_opteam.png"
+                alt="Opteam campaign"
+              />
+            </div>
+
+            {/* Opteam image (behind phone) */}
+            <div className="absolute top-0 md:right-auto w-[65%] items-end md:left-[35%] z-10">
+              <img
+                className="w-full object-cover"
+                src="../../img/opteam_image.jpg"
+                alt="Opteam campaign"
+              />
+            </div>
 
           </div>
         </div>
-
       </div>
       <Footer/>
     </>);
