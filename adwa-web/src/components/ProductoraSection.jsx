@@ -25,7 +25,7 @@ export default function ProductoraSection(){
         >
             <defs>
             <clipPath id="videoClip">
-                {/* your white rectangles */}
+                {/* máscara svg del video */}
                 <rect width="297" height="1101" x="222" y="355"/>
                 <rect width="297" height="1597" x="571" y="47"/>
                 <rect width="297" height="1086" x="920" y="301"/>
@@ -68,7 +68,7 @@ export default function ProductoraSection(){
 
         
     </div>
-    <div className="bg-[#9700FF] h-[350px] items-center justify-center flex mx-auto overflow-hidden select-none">
+    <div className="bg-[#9700FF] sm:h-[150px] md:h-[200px] items-center justify-center flex mx-auto overflow-hidden select-none">
       <MarqueeItem images={images} from={0} to={"-100%"} />
     </div>
 </div>;

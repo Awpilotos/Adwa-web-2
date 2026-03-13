@@ -23,8 +23,8 @@ export default function Hero() {
         </h1>
 
         <p className="max-w-2xl text-[16px] lg:text-[20px]">
-          Diseñamos tu estrategia de liderazgo digital, te entrenamos<br/> en
-          comunicación auténtica y generamos un impacto<br/> medible en tu industria.
+          Diseñamos tu estrategia de liderazgo digital, te entrenamos<br className="hidden lg:block"/> en
+          comunicación auténtica y generamos un impacto<br className="hidden lg:block"/> medible en tu industria.
         </p>
 
         <button className="

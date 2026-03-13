@@ -1,14 +1,28 @@
-import { ImageList } from '@mui/material';
-import { ImageListItem } from '@mui/material';
-import { Typography } from '@mui/material';
-import { Box } from '@mui/material';
-import { motion } from 'framer-motion';
+import { ImageList,ImageListItem,Typography, Box} from '@mui/material';
+import { useRef, useState, useEffect } from 'react';
+import {useInView} from 'framer-motion';
+import Counter from './ui/Counter';
 
 export default function PaidMediaSection(){
+  const sectionRef = useRef(null);
+  const isSectionVisible = useInView(sectionRef, { once: true, amount: 0.1 });
+
+  const [startCounters, setStartCounters] = useState(false);
+
+  useEffect(() => {
+    if (isSectionVisible) {
+      setTimeout(() => {
+        setStartCounters(true);
+      }, 100); // small pause before starting
+    }
+  }, [isSectionVisible]);
+
   const imagenes=[
         {
             id: 1,
-            value: "+200",
+            value: "200",
+            prefix:"+",
+            suffix:"",
             description: "Campañas\ngestionadas",
             src: "../../img/gradiente_azul_rosa_morado.png",
             alt: "Gradiente",
@@ -21,6 +35,8 @@ export default function PaidMediaSection(){
         {
             id: 2,
             value: "",
+            prefix:"",
+            suffix:"",
             description: "",
             src: "../../img/fondo_transparente_d.png",
             alt: "Gradiente rosa morado",
@@ -31,6 +47,8 @@ export default function PaidMediaSection(){
         {
             id: 3,
             value: "",
+            prefix:"",
+            suffix:"",
             description: "",
             src: "../../img/gradiente_rosa_peq.png",
             alt: "Gradiente",
@@ -41,6 +59,8 @@ export default function PaidMediaSection(){
         {
             id: 4,
             value: "",
+            prefix:"",
+            suffix:"",
             description: "",
             src: "../../img/claqueta.png",
             alt: "Claqueta",
@@ -50,7 +70,9 @@ export default function PaidMediaSection(){
         },
         {
             id: 5,
-            value: "98%",
+            value: "98",
+            prefix:"",
+            suffix:"%",
             description: "Tasa de Éxito",
             src: "../../img/gradiente_rosa_peq.png",
             alt: "Gradiente",
@@ -63,6 +85,8 @@ export default function PaidMediaSection(){
         {
             id: 6,
             value: "",
+            prefix:"",
+            suffix:"",
             description: "",
             src: "../../img/fondo_transparente_.png",
             alt: "Gradiente rosa morado",
@@ -72,7 +96,9 @@ export default function PaidMediaSection(){
         },
         {
             id: 7,
-            value: "+10",
+            value: "10",
+            prefix:"+",
+            suffix:"",
             description: "En medios\ndigitales",
             src: "../../img/gradiente_rosa_morado.png",
             alt: "Gradiente rosa morado",
@@ -85,6 +111,8 @@ export default function PaidMediaSection(){
         {
             id: 8,
             value: "",
+            prefix:"",
+            suffix:"",
             description: "",
             src: "../../img/gradient_mas_a.svg",
             alt: "Claqueta",
@@ -94,7 +122,9 @@ export default function PaidMediaSection(){
         },
         {
             id: 9,
-            value: "+50",
+            value: "50",
+            prefix:"+",
+            suffix:"",
             description: "Marcas\nNacionales e Internacionales",
             src: "../../img/gradiente_azul_rosa.png",
             alt: "Claqueta filmación",
@@ -107,6 +137,8 @@ export default function PaidMediaSection(){
         {
             id: 10,
             value: "",
+            prefix:"",
+            suffix:"",
             description: "",
             src: "../../img/pieza_ajedrez.png",
             alt: "Pieza ajedrez emporium",
@@ -116,7 +148,9 @@ export default function PaidMediaSection(){
         },
         {
             id: 11,
-            value: "+50",
+            value: "50",
+            prefix:"+",
+            suffix:"",
             description: "Clientes Satisfechos",
             src: "../../img/gradiente_azul_rosa.png",
             alt: "Gradiente",
@@ -136,7 +170,7 @@ export default function PaidMediaSection(){
     ];
 
     return <div className="section-wrapper flex-col justify-center items-center">
-      <div className="w-full max-w-[1000px] px-8 mt-[61px] mb-[151px]">
+      <div className="w-full max-w-[1000px] px-8 mt-[61px] mb-[151px]" ref={sectionRef}>
         <ImageList variant='masonry' cols={4} gap={8} sx={{ overflow: "visible" }}>
             <ImageListItem className='z-20'>
                 <div className="flex flex-col items-start relative">
@@ -197,7 +231,7 @@ export default function PaidMediaSection(){
                             md: "80px",   
                             lg: "100px",  }}}
                       >
-                      {item.value}
+                      {item.prefix}<Counter value={item.value} start={isSectionVisible}/>{item.suffix}
                     </Box>
 
                     <Box
