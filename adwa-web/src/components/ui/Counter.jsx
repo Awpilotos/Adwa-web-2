@@ -13,7 +13,7 @@ export default function Counter({ value = 0, start = false }) {
   useEffect(() => {
     if (!start || !isVisible || value === 0) return;
 
-    const duration = 1100;
+    const duration = 1300;
     let startTime = null;
 
     const animate = (time) => {
