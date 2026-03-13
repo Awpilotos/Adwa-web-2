@@ -128,6 +128,43 @@ export default function Portafolio() {
             </div>
 
           </div>
+
+          {/* Livin + Opteam Section */}
+          <div className="grid grid-cols-1 md:grid-cols-[65%_35%] gap-10 items-end">
+            
+            {/* Left column: Lvin website */}
+            <div className="flex flex-col justify-end gap-6 relative -mt-35 md:-mt-0">
+              <video
+                className="w-full aspect-[1.84] object-cover relative -top-16 md:-top-0"
+                src={video_livin}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+              <p className="text-white text-lg md:text-xl max-w-[520px]">
+                <span className="font-black block">Opteam</span>
+                messaging and full design of the campaign which appeared across
+                New York this autumn.
+              </p>
+            </div>
+
+            {/* Right column: Opteam*/}
+            <div className="flex flex-col justify-end gap-6 items-center lg:items-start">
+              <img
+                className="w-full max-w-[560px] aspect-[1.84] object-cover"
+                src="../../img/opteam_image_square.jpg"
+                alt="Niu campaign"
+              />
+              <p className="text-white text-lg md:text-xl max-w-[520px]">
+                <span className="font-black block">Livin</span>
+                messaging and full design of the campaign which appeared across
+                New York this autumn.
+              </p>
+            </div>
+
+            
+          </div>
         </div>
       </div>
       <Footer/>
