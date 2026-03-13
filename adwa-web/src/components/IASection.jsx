@@ -97,13 +97,12 @@ export default function IASection(){
             </h2>
 
             <Swiper
-            className=".swiper-container"
+            className="swiper-container"
             effect="coverflow"
             slideToClickedSlide={true}
             centeredSlides={true}
             slidesPerView={2}
             initialSlide={1}
-            spaceBetween={125}
             loop={true}
             coverflowEffect={{
               rotate: 0,
@@ -112,19 +111,33 @@ export default function IASection(){
               modifier: 2,
               slideShadows: false,
             }}
+            breakpoints={{
+                0: {
+                slidesPerView: 1.4,
+                spaceBetween: 10,
+                },
+                768: {
+                slidesPerView: 1.5,
+                spaceBetween: 80,
+                },
+                1024: {
+                slidesPerView: 2,
+                spaceBetween: 125,
+                },
+            }}
             modules={[EffectCoverflow]}
             style={{ width: "90%", maxWidth: "1400"}}
           > 
             {personajes.map((personaje, i) => (
               <SwiperSlide key={i}>
-                <Card
-                    mainImage={personaje.mainImage}
-                    overlayImage={personaje.overlayImage}
-                    label={personaje.label}
-                    gradientColor={personaje.gradientColor}
-                    gradientTextl={personaje.gradientTextl}
-                    gradientTextr={personaje.gradientTextr}
-                />
+                    <Card
+                        mainImage={personaje.mainImage}
+                        overlayImage={personaje.overlayImage}
+                        label={personaje.label}
+                        gradientColor={personaje.gradientColor}
+                        gradientTextl={personaje.gradientTextl}
+                        gradientTextr={personaje.gradientTextr}
+                    />
               </SwiperSlide>
             ))}
           </Swiper>

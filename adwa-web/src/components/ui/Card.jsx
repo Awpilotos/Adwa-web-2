@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ mainImage, overlayImage, label, gradientColor, gradientTextl, gradientTextr }) => {
   return (
-    <div className="relative w-full aspect-[400/850] overflow-hiddem rounded-2xl">
+    <div className="relative w-full aspect-[400/850] overflow-hidden rounded-2xl">
       {/* Gradient overlay */}
       <div
         className={`absolute inset-x-[5%] top-[20%] h-[80%] bg-gradient-to-t ${gradientColor} rounded-lg`}
