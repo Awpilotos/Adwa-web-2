@@ -130,7 +130,7 @@ export default function Portafolio() {
           </div>
 
           {/* Livin + Opteam Section */}
-          <div className="grid grid-cols-1 md:grid-cols-[65%_35%] gap-10 items-end">
+          <div className="grid grid-cols-1 md:grid-cols-[65%_35%] gap-10 mt-8 items-end">
             
             {/* Left column: Lvin website */}
             <div className="flex flex-col justify-end gap-6 relative -mt-35 md:-mt-0">
@@ -162,9 +162,22 @@ export default function Portafolio() {
                 New York this autumn.
               </p>
             </div>
-
             
           </div>
+
+          {/* Botón contáctanos*/}
+          <div className="items-center mx-auto mt-10 text-white">
+            <button className="
+            w-auto
+            px-6 py-3 
+            rounded-[20px] 
+            bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]">
+            Agenda una sesión gratuita
+          </button>
+
+          </div>
+          
+          
         </div>
       </div>
       <Footer/>
