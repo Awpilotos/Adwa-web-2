@@ -8,52 +8,48 @@ export default function Portafolio() {
   return (
     <>
       <Navbar/>
-      <div className="
-        relative 
+      <div
+        className="
+        relative
+        flex
+        items-center
+        justify-center
+        min-h-[45vh]
         section-wrapper-auto
-        pb-30
-        items-center 
-        justify-center 
-        bg-[url('/img/dark-blue-gradient.png')] 
-        bg-cover 
+        bg-[url('/img/dark-blue-gradient.png')]
+        bg-cover
         bg-center
         mt-[-90px]"
       >
-        <div className="flex flex-col mt-[100px] items-center text-center text-white max-w-4xl px-6 pt-10 gap-10">
+        <div className="flex flex-col items-center text-center text-white max-w-4xl px-6 gap-10">
 
-          <h1 className="text-white text-[50px] leading-[50px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left mb-[100px] lg:mb-0">
-                Nuestro <br/>
-                <span className="relative inline-block">
-                    <span
-                        className="
-                        tracking-[0.26px]
-                        bg-gradient-to-r
-                        from-[#9700FF]
-                        to-[#00B79F]
-                        bg-clip-text
-                        text-transparent"
-                    >
-                    Trabajo
-                    </span>
-                </span>
-           </h1>
+          <h1 className="text-white text-[50px] leading-[50px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px]">
+            Nuestro <br/>
+            <span className="relative inline-block">
+              <span className="tracking-[0.26px] bg-gradient-to-r from-[#9700FF] to-[#00B79F] bg-clip-text text-transparent">
+                Trabajo
+              </span>
+            </span>
+          </h1>
+
         </div>
       </div>
+
       {/* Contenido principal */}
       <div className="section-wrapper bg-[linear-gradient(296deg,rgba(39,22,51,1)_18%,rgba(28,57,142,0.2)_100%),linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_100%)]">
         <div className="section-container-large mx-auto flex flex-col">
 
           {/* Livin Section */}
-          <div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-8 items-center lg:items-start">
+          <div className="grid grid-cols-1 md:grid-cols-[40%_56%] gap-8 items-center lg:items-start pb-8">
 
             {/* Left column: Livin + image */}
-            <div className="flex flex-col gap-6 mt-[66px] md:mt-[90px] lg:mt-[120px] items-center lg:items-start">
+            <div className="flex flex-col gap-6 mt-[66px] md:mt-[90px] lg:mt-[105px] items-center lg:items-start">
               <img
                 className="w-full max-w-[560px] aspect-[1.84] object-cover"
                 src="../../img/livin_fondo.png"
                 alt="Livin campaign"
               />
-              <p className="text-white text-lg md:text-xl max-w-[520px]">
+              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
@@ -61,7 +57,7 @@ export default function Portafolio() {
             </div>
 
             {/* Right column: Phone mockup */}
-            <div className="relative flex justify-center items-start w-full overflow-visible lg:-mb-32 mb-7 z-20">
+            <div className="relative flex justify-center items-start w-full overflow-visible mb-8 md:mb-0 lg:-mb-32 z-20">
               <img
                 className="w-full max-w-none object-cover"
                 src="../../img/phone_mockup_livin.png"
@@ -72,7 +68,7 @@ export default function Portafolio() {
           </div>
 
           {/* Niu + Livin Section */}
-          <div className="grid grid-cols-1 md:grid-cols-[40%_60%] gap-10 items-end">
+          <div className="grid grid-cols-1 md:grid-cols-[40%_56%] gap-10 items-end">
 
             {/* Left column: Niu */}
             <div className="flex flex-col justify-end gap-6 items-center lg:items-start">
@@ -81,7 +77,7 @@ export default function Portafolio() {
                 src="../../img/niu_fondo.png"
                 alt="Niu campaign"
               />
-              <p className="text-white text-lg md:text-xl max-w-[520px]">
+              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
                 <span className="font-black block">Niu</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
@@ -99,7 +95,7 @@ export default function Portafolio() {
                 loop
                 playsInline
               />
-              <p className="text-white text-lg md:text-xl max-w-[520px]">
+              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
@@ -120,7 +116,7 @@ export default function Portafolio() {
             </div>
 
             {/* Opteam image (behind phone) */}
-            <div className="absolute hidden md:block top-0 md:right-auto w-[65%] items-end md:left-[35%] z-10">
+            <div className="absolute hidden md:block top-0 md:right-auto w-[60%] items-end md:left-[35%] z-10">
               <img
                 className="w-full object-cover"
                 src="../../img/opteam_image.jpg"
@@ -131,7 +127,7 @@ export default function Portafolio() {
           </div>
 
           {/* Livin + Opteam Section */}
-          <div className="grid grid-cols-1 md:grid-cols-[65%_35%] gap-10 mt-8 items-end">
+          <div className="grid grid-cols-1 md:grid-cols-[60%_36%] gap-10 mt-8 items-end">
             
             {/* Left column: Livin website video */}
             <div className="flex flex-col justify-end gap-6 relative -mt-0 md:-mt-35 lg:-mt-0">
@@ -143,7 +139,7 @@ export default function Portafolio() {
                 loop
                 playsInline
               />
-              <p className="text-white text-lg md:text-xl max-w-[520px]">
+              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
@@ -157,7 +153,7 @@ export default function Portafolio() {
                 src="../../img/opteam_image_square.jpg"
                 alt="Niu campaign"
               />
-              <p className="text-white text-lg md:text-xl max-w-[520px]">
+              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
                 <span className="font-black block">Opteam</span>
                 messaging and full design of the campaign which appeared across
                 New York this autumn.
