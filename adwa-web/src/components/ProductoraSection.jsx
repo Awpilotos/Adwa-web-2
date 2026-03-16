@@ -3,16 +3,16 @@ import MarqueeItem from "./ui/MarqueeItem";
 
 export default function ProductoraSection(){
     const images = [
-        "../../img/2btube.png",
-        "../../img/autoeastern.png",
-        "../../img/ciot.png",
-        "../../img/estudiotess.png",
-        "../../img/funkyfish.png",
-        "../../img/incoop.png",
-        "../../img/livin.png",
-        "../../img/opteam.png",
-        "../../img/pical.png",
-        "../../img/sg.png",
+        "../assets/img/2btube.png",
+        "../assets/img/autoeastern.png",
+        "../assets/img/ciot.png",
+        "../assets/img/estudiotess.png",
+        "../assets/img/funkyfish.png",
+        "../assets/img/incoop.png",
+        "../assets/img/livin.png",
+        "../assets/img/opteam.png",
+        "../assets/img/pical.png",
+        "../assets/img/sg.png",
     ];
 
     return <div className="section-wrapper-auto flex-wrap justify-center items-center">
