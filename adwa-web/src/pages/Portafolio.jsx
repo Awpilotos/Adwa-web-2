@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import video_livin_wishlist from "../assets/videos/livin_wishlist.mp4";
 import video_livin from "../assets/videos/livin.mp4";
 
 export default function Portafolio() {
@@ -130,7 +131,7 @@ export default function Portafolio() {
             <div className="flex flex-col justify-end gap-6 relative -mt-0 md:-mt-35 lg:-mt-0">
               <video
                 className="w-full aspect-[1.84] object-cover relative -mt-0 md:-mt-16 lg:-mt-0"
-                src={video_livin}
+                src={video_livin_wishlist}
                 autoPlay
                 muted
                 loop
@@ -138,7 +139,7 @@ export default function Portafolio() {
               />
               <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
-                Diseño UX/UI para una plataforma digital de gestión de referidos.
+                Diseño UX/UI para una aplicación web de gestión de referidos.
               </p>
             </div>
 
