@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import dark_blue_gradient from "../assets/img/dark-blue-gradient.png";
+import dark_blue_gradient from "../assets/img/dark-blue-gradient.jpg";
 
 export default function Nosotros() {
   return (

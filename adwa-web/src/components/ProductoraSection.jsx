@@ -1,4 +1,4 @@
-import video_4 from "../assets/videos/tras_camara.mp4";
+import video_4 from "../assets/videos/tras_camara_cortado.mp4";
 import MarqueeItem from "./ui/MarqueeItem";
 
 import btube from "../assets/img/2btube.png";

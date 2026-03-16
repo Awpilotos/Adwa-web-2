@@ -6,14 +6,13 @@ import Counter from './ui/Counter';
 import img1 from "../assets/img/gradiente_azul_rosa_morado.png";
 import img2 from "../assets/img/fondo_transparente_d.png";
 import img3 from "../assets/img/gradiente_rosa_peq.png";
-import img4 from  "../assets/img/claqueta.png";
+import img4 from  "../assets/img/claqueta.jpg";
 import img5 from "../assets/img/gradiente_rosa_peq.png";
 import img6 from "../assets/img/fondo_transparente_.png";
 import img7 from "../assets/img/gradiente_rosa_morado.png";
-import img8 from  "../assets/img/gradient_mas_a.svg";
+import img8 from  "../assets/img/gradient_mas_a.png";
 import img9 from "../assets/img/gradiente_azul_rosa.png";
 import img10 from "../assets/img/pieza_ajedrez.png";
-import img11 from "../assets/img/gradiente_azul_rosa.png";
 
 export default function PaidMediaSection(){
   const sectionRef = useRef(null);
@@ -164,7 +163,7 @@ export default function PaidMediaSection(){
             prefix:"+",
             suffix:"",
             description: "Clientes Satisfechos",
-            src: img11,
+            src: img9,
             alt: "Gradiente",
             dimensions: {height: "511px"},
             aspectRatio: "2.47",

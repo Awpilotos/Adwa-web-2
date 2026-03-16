@@ -1,4 +1,4 @@
-import dark_blue_gradient from "../assets/img/dark-blue-gradient.png";
+import dark_blue_gradient from "../assets/img/dark-blue-gradient.jpg";
 
 export default function Hero() {
   return (

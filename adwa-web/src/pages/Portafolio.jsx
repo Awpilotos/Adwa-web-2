@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 import video_livin_wishlist from "../assets/videos/livin_wishlist.mp4";
 import video_livin from "../assets/videos/livin.mp4";
 
-import dark_blue_gradient from "../assets/img/dark-blue-gradient.png";
-import livin_fondo from "../assets/img/livin_fondo.png";
+import dark_blue_gradient from "../assets/img/dark-blue-gradient.jpg";
+import livin_fondo from "../assets/img/livin_fondo.jpg";
 import livin_phone_mockup from "../assets/img/phone_mockup_livin.png";
-import niu_fondo from "../assets/img/niu_fondo.png";
+import niu_fondo from "../assets/img/niu_fondo.jpg";
 import phone_mockup_opteam from "../assets/img/phone_mockup_opteam.png";
 import opteam_image from "../assets/img/opteam_image.jpg";
 import opteam_image_square from "../assets/img/opteam_image_square.jpg";
