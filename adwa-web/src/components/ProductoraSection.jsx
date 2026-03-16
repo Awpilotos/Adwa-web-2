@@ -1,5 +1,5 @@
 import video_4 from "../assets/videos/tras_camara.mp4";
-import MarqueeItem from "./MarqueeItem";
+import MarqueeItem from "./ui/MarqueeItem";
 
 export default function ProductoraSection(){
     const images = [
