@@ -1,18 +1,29 @@
 import video_4 from "../assets/videos/tras_camara.mp4";
 import MarqueeItem from "./ui/MarqueeItem";
 
+import btube from "../assets/img/2btube.png";
+import autoeastern from "../assets/img/autoeastern.png";
+import ciot from "../assets/img/ciot.png";
+import estudiotess from "../assets/img/estudiotess.png";
+import funkyfish from "../assets/img/funkyfish.png";
+import incoop from "../assets/img/incoop.png";
+import livin from "../assets/img/livin.png";
+import opteam from "../assets/img/opteam.png";
+import pical from "../assets/img/pical.png";
+import sg from "../assets/img/sg.png";
+
 export default function ProductoraSection(){
     const images = [
-        "../assets/img/2btube.png",
-        "../assets/img/autoeastern.png",
-        "../assets/img/ciot.png",
-        "../assets/img/estudiotess.png",
-        "../assets/img/funkyfish.png",
-        "../assets/img/incoop.png",
-        "../assets/img/livin.png",
-        "../assets/img/opteam.png",
-        "../assets/img/pical.png",
-        "../assets/img/sg.png",
+        btube,
+        autoeastern,
+        ciot,
+        estudiotess,
+        funkyfish,
+        incoop,
+        livin,
+        opteam,
+        pical,
+        sg,
     ];
 
     return <div className="section-wrapper-auto flex-wrap justify-center items-center">

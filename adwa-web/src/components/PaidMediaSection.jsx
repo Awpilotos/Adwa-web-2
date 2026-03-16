@@ -3,6 +3,18 @@ import { useRef, useState, useEffect } from 'react';
 import {useInView} from 'framer-motion';
 import Counter from './ui/Counter';
 
+import img1 from "../assets/img/gradiente_azul_rosa_morado.png";
+import img2 from "../assets/img/fondo_transparente_d.png";
+import img3 from "../assets/img/gradiente_rosa_peq.png";
+import img4 from  "../assets/img/claqueta.png";
+import img5 from "../assets/img/gradiente_rosa_peq.png";
+import img6 from "../assets/img/fondo_transparente_.png";
+import img7 from "../assets/img/gradiente_rosa_morado.png";
+import img8 from  "../assets/img/gradient_mas_a.svg";
+import img9 from "../assets/img/gradiente_azul_rosa.png";
+import img10 from "../assets/img/pieza_ajedrez.png";
+import img11 from "../assets/img/gradiente_azul_rosa.png";
+
 export default function PaidMediaSection(){
   const sectionRef = useRef(null);
   const isSectionVisible = useInView(sectionRef, { once: true, amount: 0.1 });
@@ -24,7 +36,7 @@ export default function PaidMediaSection(){
             prefix:"+",
             suffix:"",
             description: "Campañas\ngestionadas",
-            src: "../../img/gradiente_azul_rosa_morado.png",
+            src: img1,
             alt: "Gradiente",
             dimensions: { width: "214px", height: "273px" },
             aspectRatio: "0.79",
@@ -38,7 +50,7 @@ export default function PaidMediaSection(){
             prefix:"",
             suffix:"",
             description: "",
-            src: "../../img/fondo_transparente_d.png",
+            src: img2,
             alt: "Gradiente rosa morado",
             dimensions: { width: "214px", height: "273px" },
             aspectRatio: "0.79",
@@ -50,7 +62,7 @@ export default function PaidMediaSection(){
             prefix:"",
             suffix:"",
             description: "",
-            src: "../../img/gradiente_rosa_peq.png",
+            src: img3,
             alt: "Gradiente",
             dimensions: { width: "214px", height: "273px" },
             aspectRatio: "0.79",
@@ -62,7 +74,7 @@ export default function PaidMediaSection(){
             prefix:"",
             suffix:"",
             description: "",
-            src: "../../img/claqueta.png",
+            src: img4,
             alt: "Claqueta",
             dimensions: { width: "214px", height: "273px" },
             aspectRatio: "0.79",
@@ -74,7 +86,7 @@ export default function PaidMediaSection(){
             prefix:"",
             suffix:"%",
             description: "Tasa de Éxito",
-            src: "../../img/gradiente_rosa_peq.png",
+            src: img5,
             alt: "Gradiente",
             dimensions: { width: "207px", height: "511px" },
             aspectRatio: "2.47",
@@ -88,7 +100,7 @@ export default function PaidMediaSection(){
             prefix:"",
             suffix:"",
             description: "",
-            src: "../../img/fondo_transparente_.png",
+            src: img6,
             alt: "Gradiente rosa morado",
             dimensions: { width: "214px", height: "273px" },
             aspectRatio: "0.79",
@@ -100,7 +112,7 @@ export default function PaidMediaSection(){
             prefix:"+",
             suffix:"",
             description: "En medios\ndigitales",
-            src: "../../img/gradiente_rosa_morado.png",
+            src: img7,
             alt: "Gradiente rosa morado",
             dimensions: { width: "214px", height: "273px" },
             aspectRatio: "0.79",
@@ -114,7 +126,7 @@ export default function PaidMediaSection(){
             prefix:"",
             suffix:"",
             description: "",
-            src: "../../img/gradient_mas_a.svg",
+            src: img8,
             alt: "Claqueta",
             dimensions: { width: "214px", height: "273px" },
             aspectRatio: "0.79",
@@ -126,7 +138,7 @@ export default function PaidMediaSection(){
             prefix:"+",
             suffix:"",
             description: "Marcas\nNacionales e Internacionales",
-            src: "../../img/gradiente_azul_rosa.png",
+            src: img9,
             alt: "Claqueta filmación",
             dimensions: { width: "214px", height: "273px"},
             aspectRatio: "0.79",
@@ -140,7 +152,7 @@ export default function PaidMediaSection(){
             prefix:"",
             suffix:"",
             description: "",
-            src: "../../img/pieza_ajedrez.png",
+            src: img10,
             alt: "Pieza ajedrez emporium",
             dimensions: {height: "511px" },
             aspectRatio: "2.47",
@@ -152,7 +164,7 @@ export default function PaidMediaSection(){
             prefix:"+",
             suffix:"",
             description: "Clientes Satisfechos",
-            src: "../../img/gradiente_azul_rosa.png",
+            src: img11,
             alt: "Gradiente",
             dimensions: {height: "511px"},
             aspectRatio: "2.47",
@@ -175,7 +187,7 @@ export default function PaidMediaSection(){
             <ImageListItem className='z-20'>
                 <div className="flex flex-col items-start relative">
                     <img
-                    src="../../img/fondo_transparente_.png"
+                    src={img6}
                     loading="lazy"
                     style={{
                         display: 'block',

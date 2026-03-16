@@ -1,5 +1,7 @@
 
 import video_4 from "../assets/videos/campanas_video_celular_rotado.mp4";
+import gradiente_horizontal_grande from "../assets/img/gradiente_horizontal_grande.png";
+import mobile_mockup from "../assets/img/mobile-mockup.png";
 
 export default function CampanaSection(){
     return <div className="section-wrapper-auto justify-center mb-14">
@@ -24,7 +26,7 @@ export default function CampanaSection(){
                     Publicitarias
                     </span>
                     <img
-                        src="../../img/gradiente_horizontal_grande.png"
+                        src={gradiente_horizontal_grande}
                         alt=""
                         className="absolute left-0 bottom-[-60px] lg:bottom-[-90px] w-full h-auto z-0"
                     />
@@ -50,7 +52,7 @@ export default function CampanaSection(){
         </div>
         <div className="flex justify-center items-center w-full lg:w-auto">
             <img 
-                src="../../img/mobile-mockup.png" 
+                src={mobile_mockup}
                 alt="Campaña" 
                 className="
                 max-w-full 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import RoutingMenuItem from "./ui/RoutingMenuItem";
 
+
 export default function Navbar(){
     const [activeIndex, setActiveIndex] = useState(0);
     const navigate = useNavigate();

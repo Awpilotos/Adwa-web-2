@@ -5,6 +5,14 @@ import Footer from "../components/Footer";
 import video_livin_wishlist from "../assets/videos/livin_wishlist.mp4";
 import video_livin from "../assets/videos/livin.mp4";
 
+import dark_blue_gradient from "../assets/img/dark-blue-gradient.png";
+import livin_fondo from "../assets/img/livin_fondo.png";
+import livin_phone_mockup from "../assets/img/phone_mockup_livin.png";
+import niu_fondo from "../assets/img/niu_fondo.png";
+import phone_mockup_opteam from "../assets/img/phone_mockup_opteam.png";
+import opteam_image from "../assets/img/opteam_image.jpg";
+import opteam_image_square from "../assets/img/opteam_image_square.jpg";
+
 export default function Portafolio() {
   return (
     <>
@@ -17,10 +25,10 @@ export default function Portafolio() {
         justify-center
         min-h-[45vh]
         section-wrapper-auto
-        bg-[url('/img/dark-blue-gradient.png')]
         bg-cover
         bg-center
         mt-[-90px]"
+        style={{ backgroundImage: `url(${dark_blue_gradient})` }}
       >
         <div className="flex flex-col items-center text-center text-white max-w-4xl px-6 gap-10">
 
@@ -47,7 +55,7 @@ export default function Portafolio() {
             <div className="flex flex-col gap-6 mt-[66px] md:mt-[90px] lg:mt-[105px] items-center lg:items-start">
               <img
                 className="w-full max-w-[560px] aspect-[1.84] object-cover"
-                src="../../img/livin_fondo.png"
+                src={livin_fondo}
                 alt="Livin campaign"
               />
               <p className="text-white w-full text-[16px] lg:text-[20px]">
@@ -60,7 +68,7 @@ export default function Portafolio() {
             <div className="relative flex justify-center items-start w-full overflow-visible mb-8 md:mb-0 lg:-mb-32 z-20">
               <img
                 className="w-full max-w-none object-cover"
-                src="../../img/phone_mockup_livin.png"
+                src={livin_phone_mockup}
                 alt="Livin campaign"
               />
             </div>
@@ -74,7 +82,7 @@ export default function Portafolio() {
             <div className="flex flex-col justify-end gap-6 items-center lg:items-start">
               <img
                 className="w-full max-w-[560px] aspect-[1.84] object-cover"
-                src="../../img/niu_fondo.png"
+                src={niu_fondo}
                 alt="Niu campaign"
               />
               <p className="text-white w-full text-[16px] lg:text-[20px]">
@@ -108,7 +116,7 @@ export default function Portafolio() {
             <div className="relative z-30 w-full md:w-[60%] flex justify-center">
               <img
                 className="w-full object-cover"
-                src="../../img/phone_mockup_opteam.png"
+                src={phone_mockup_opteam}
                 alt="Opteam campaign"
               />
             </div>
@@ -117,7 +125,7 @@ export default function Portafolio() {
             <div className="absolute hidden md:block top-0 md:right-auto w-[60%] items-end md:left-[40%] z-10">
               <img
                 className="w-full object-cover"
-                src="../../img/opteam_image.jpg"
+                src={opteam_image}
                 alt="Opteam campaign"
               />
             </div>
@@ -147,7 +155,7 @@ export default function Portafolio() {
             <div className="flex flex-col justify-end gap-6 items-center lg:items-start">
               <img
                 className="w-full max-w-[560px] aspect-[1.84] object-cover"
-                src="../../img/opteam_image_square.jpg"
+                src={opteam_image_square}
                 alt="Niu campaign"
               />
               <p className="text-white w-full text-[16px] lg:text-[20px]">

@@ -1,3 +1,4 @@
+import dark_blue_gradient from "../assets/img/dark-blue-gradient.png";
 
 export default function Hero() {
   return (
@@ -5,11 +6,11 @@ export default function Hero() {
       relative 
       section-wrapper 
       items-center
-      bg-[url('/img/dark-blue-gradient.png')] 
       bg-cover 
       bg-center
-      mt-[-90px]
-    ">
+      mt-[-90px]"
+      style={{ backgroundImage: `url(${dark_blue_gradient})` }}
+    >
       <div className="w-full flex flex-col items-center text-center text-white max-w-4xl mx-auto px-6 gap-10">
 
         <span className="text-sm font-medium tracking-wide">

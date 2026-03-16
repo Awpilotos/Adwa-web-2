@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import dark_blue_gradient from "../assets/img/dark-blue-gradient.png";
+
 export default function Nosotros() {
   return (
     <>
@@ -12,10 +14,10 @@ export default function Nosotros() {
         pb-30
         items-center 
         justify-center 
-        bg-[url('/img/dark-blue-gradient.png')] 
         bg-cover 
         bg-center
         mt-[-90px]"
+        style={{ backgroundImage: `url(${dark_blue_gradient})` }}
       >
         <div className="flex flex-col mt-[100px] items-center text-center text-white max-w-4xl px-6 pt-10 gap-10">
 

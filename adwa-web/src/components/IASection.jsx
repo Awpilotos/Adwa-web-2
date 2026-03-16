@@ -8,69 +8,78 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import distrax_fondo from "../assets/img/distrax_fondo.png";
+import distrax from "../assets/img/distrax.png";
+import nedro_fondo from "../assets/img/nedro_fondo.png";
+import nedro from "../assets/img/nedro.png";
+import prudi_fondo from "../assets/img/prudi_fondo.png";
+import prudi from "../assets/img/prudi.png";
+import negli_fondo from "../assets/img/negli_fondo.png";
+import negli from "../assets/img/negli.png";
+
+import { EffectCoverflow} from 'swiper/modules';
 
 export default function IASection(){
     const personajes=[
         {
-            mainImage:"../../img/distrax_fondo.png",
-            overlayImage:"../../img/distrax.png",
+            mainImage: distrax_fondo,
+            overlayImage: distrax,
             label:"Distrax",
             gradientColor:"from-[#FF6900] to-transparent",
             gradientTextl: "#FEFFFE",
             gradientTextr: "#FAB889",
         },
         {
-            mainImage:"../../img/nedro_fondo.png",
-            overlayImage:"../../img/nedro.png",
+            mainImage: nedro_fondo,
+            overlayImage: nedro,
             label:"Nedro",
             gradientColor:"from-[#1C6F16] to-transparent",
             gradientTextl: "#0BDB5A",
             gradientTextr: "#0F9D8B",
         },
         {
-            mainImage:"../../img/prudi_fondo.png",
-            overlayImage:"../../img/prudi.png",
+            mainImage:prudi_fondo,
+            overlayImage:prudi,
             label:"Prudi",
             gradientColor:"from-[#3987A9] to-transparent",
             gradientTextl: "#77B3CD",
             gradientTextr: "#B9DEED",
         },
         {
-            mainImage:"../../img/negli_fondo.png",
-            overlayImage:"../../img/negli.png",
+            mainImage:negli_fondo,
+            overlayImage:negli,
             label:"Negli",
             gradientColor:"from-[#5B0099] to-transparent",
             gradientTextl: "#D69FFB",
             gradientTextr: "#9810FA",
         },
         {
-            mainImage:"../../img/distrax_fondo.png",
-            overlayImage:"../../img/distrax.png",
+            mainImage:distrax_fondo,
+            overlayImage:distrax,
             label:"Distrax",
             gradientColor:"from-[#FF6900] to-transparent",
             gradientTextl: "#FEFFFE",
             gradientTextr: "#FAB889",
         },
         {
-            mainImage:"../../img/nedro_fondo.png",
-            overlayImage:"../../img/nedro.png",
+            mainImage:nedro_fondo,
+            overlayImage:nedro,
             label:"Nedro",
             gradientColor:"from-[#1C6F16] to-transparent",
             gradientTextl: "#0BDB5A",
             gradientTextr: "#0F9D8B",
         },
         {
-            mainImage:"../../img/prudi_fondo.png",
-            overlayImage:"../../img/prudi.png",
+            mainImage:prudi_fondo,
+            overlayImage:prudi,
             label:"Prudi",
             gradientColor:"from-[#3987A9] to-transparent",
             gradientTextl: "#77B3CD",
             gradientTextr: "#B9DEED",
         },
         {
-            mainImage:"../../img/negli_fondo.png",
-            overlayImage:"../../img/negli.png",
+            mainImage:negli_fondo,
+            overlayImage:negli,
             label:"Negli",
             gradientColor:"from-[#5B0099] to-transparent",
             gradientTextl: "#933AD4",

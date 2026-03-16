@@ -1,19 +1,24 @@
 import Iframe from 'react-iframe';
 
+import correo from "../assets/img/correo.svg";
+import telefono from "../assets/img/telefono.svg";
+import direccion from "../assets/img/direccion.svg";
+import redes_sociales from "../assets/img/redes_sociales.svg";
+
 export default function Footer(){
   const contactInfo = [
     {
-      icon: "../../img/correo.svg",
+      icon: correo,
       label: "Email",
       value: "info@adwa.com.ec",
     },
     {
-      icon: "../../img/telefono.svg",
+      icon: telefono,
       label: "Teléfono",
       value: "+593998115348",
     },
     {
-      icon: "../../img/direccion.svg",
+      icon: direccion,
       label: "Ubicación",
       value: "Quito, Ecuador",
     },
@@ -72,7 +77,7 @@ export default function Footer(){
             <img
               className="h-12 relative w-full"
               alt="Redes sociales"
-              src="../../img/redes_sociales.svg"
+              src= {redes_sociales}
             />
           </div>
         </aside>
