@@ -7,7 +7,7 @@ import { Play } from "lucide-react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
-export default function VideoCarousel({ videos }) {
+export default function VideoCarousel({videos}) {
   const [open, setOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
 
@@ -52,6 +52,7 @@ export default function VideoCarousel({ videos }) {
                 muted
                 loop
                 playsInline
+                poster={video.thumb}
               />
 
               {/* Boton de play sobre el video */}
@@ -62,16 +63,16 @@ export default function VideoCarousel({ videos }) {
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  background: "rgba(0,0,0,0.6)",
+                  background: "rgba(255,255,255,0.3)",
                   color: "white",
                   width: 80,
                   height: 80,
                   "&:hover": {
-                    background: "rgba(0,0,0,0.8)",
+                    background: "rgba(139, 139, 139, 0.8)",
                   },
                 }}
               >
-                <Play size={40} />
+                <Play size={40}/>
               </IconButton>
 
 

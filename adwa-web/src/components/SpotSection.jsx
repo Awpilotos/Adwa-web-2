@@ -6,11 +6,13 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
-import video_1 from "../assets/videos/incoop.mp4";
-import video_2 from '../assets/videos/adwa_showcase.mp4';
+import video_1 from '../assets/videos/adwa_showcase.mp4';
+import video_2 from "../assets/videos/incoop.mp4";
 import video_3 from '../assets/videos/livin_animado.mp4';
+
+import thumb1 from "../assets/thumbnails/adwa_showcase_thumb3.jpg";
+import thumb2 from "../assets/thumbnails/incoop_thumb.jpg";
+import thumb3 from "../assets/thumbnails/livin_thumb.jpg";
 
 import VideoCarousel from './ui/VideoCarousel';
 
@@ -19,12 +21,12 @@ export default function SpotSection() {
   const [activeVideo, setActiveVideo] = useState(null);
 
   const videos = [
-    { thumb: "", src: video_1 },
-    { thumb: "", src: video_2 },
-    { thumb: "", src: video_3 },
-    { thumb: "", src: video_1 },
-    { thumb: "", src: video_2 },
-    { thumb: "", src: video_3 },
+    { thumb: thumb1, src: video_1 },
+    { thumb: thumb2, src: video_2 },
+    { thumb: thumb3, src: video_3 },
+    { thumb: thumb1, src: video_1 },
+    { thumb: thumb2, src: video_2 },
+    { thumb: thumb3, src: video_3 },
   ];
   
   return (
