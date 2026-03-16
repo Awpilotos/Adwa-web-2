@@ -11,7 +11,7 @@ export default function Navbar(){
             path:"/",
         },
         { label: "Nosotros",
-            path:"/nosotros",
+            path:"",
         },
         { label: "Portafolio",
             path:"/portafolio",
@@ -37,7 +37,7 @@ export default function Navbar(){
         {/* Botones de navegacion */}
         <nav className="z-50 flex px-4 py-2 w-full max-w-[425px] mx-auto items-center justify-center bg-[#ffffff1a] rounded-[28px] backdrop-blur-[2.0px] backdrop-brightness-[100.0%] backdrop-saturate-[96.5%] [-webkit-backdrop-filter:blur(2.0px)_brightness(100.0%)_saturate(96.5%)] shadow-[inset_1px_0_0_rgba(255,255,255,0.32),inset_-1px_0_1px_rgba(0,0,0,0.11)]">
             {navigationItems.map((item, index) => ( 
-                <RoutingMenuItem index={index} path={item.path} label={item.label}/>
+                <RoutingMenuItem key={index} index={index} path={item.path} label={item.label}/>
             ))}
         </nav>
 
