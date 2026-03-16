@@ -49,10 +49,9 @@ export default function Portafolio() {
                 src="../../img/livin_fondo.png"
                 alt="Livin campaign"
               />
-              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
+              <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
-                messaging and full design of the campaign which appeared across
-                New York this autumn.
+                Diseño de identidad visual y campaña de comunicación para Livin, broker de seguros.
               </p>
             </div>
 
@@ -77,10 +76,9 @@ export default function Portafolio() {
                 src="../../img/niu_fondo.png"
                 alt="Niu campaign"
               />
-              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
+              <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Niu</span>
-                messaging and full design of the campaign which appeared across
-                New York this autumn.
+                Conceptualización y desarrollo de la identidad de Niu, broker financiero.
               </p>
             </div>
 
@@ -95,10 +93,9 @@ export default function Portafolio() {
                 loop
                 playsInline
               />
-              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
+              <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
-                messaging and full design of the campaign which appeared across
-                New York this autumn.
+                Concepto creativo y producción con IA generativa para la campaña de Livin.
               </p>
             </div>
           </div>
@@ -139,10 +136,9 @@ export default function Portafolio() {
                 loop
                 playsInline
               />
-              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
+              <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
-                messaging and full design of the campaign which appeared across
-                New York this autumn.
+                Diseño UX/UI para una plataforma digital de gestión de referidos.
               </p>
             </div>
 
@@ -153,10 +149,9 @@ export default function Portafolio() {
                 src="../../img/opteam_image_square.jpg"
                 alt="Niu campaign"
               />
-              <p className="text-white max-w-[520px] text-[16px] lg:text-[20px]">
+              <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Opteam</span>
-                messaging and full design of the campaign which appeared across
-                New York this autumn.
+                Rediseño de logo e identidad de marca para Opteam.
               </p>
             </div>
             
