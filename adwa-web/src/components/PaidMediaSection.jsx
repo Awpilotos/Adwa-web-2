@@ -3,16 +3,15 @@ import { useRef, useState, useEffect } from 'react';
 import {useInView} from 'framer-motion';
 import Counter from './ui/Counter';
 
-import img1 from "../assets/img/gradiente_azul_rosa_morado.png";
-import img2 from "../assets/img/fondo_transparente_d.png";
-import img3 from "../assets/img/gradiente_rosa_peq.png";
+import img1 from "../assets/img/gradiente_azul_rosa_morado.webp";
+import img2 from "../assets/img/fondo_transparente_d.webp";
+import img3 from "../assets/img/gradiente_rosa_peq.webp";
 import img4 from  "../assets/img/claqueta.jpg";
-import img5 from "../assets/img/gradiente_rosa_peq.png";
-import img6 from "../assets/img/fondo_transparente_.png";
-import img7 from "../assets/img/gradiente_rosa_morado.png";
-import img8 from  "../assets/img/gradient_mas_a.png";
-import img9 from "../assets/img/gradiente_azul_rosa.png";
-import img10 from "../assets/img/pieza_ajedrez.png";
+import img6 from "../assets/img/fondo_transparente_.webp";
+import img7 from "../assets/img/gradiente_rosa_morado.webp";
+import img8 from  "../assets/img/gradient_mas_a.webp";
+import img9 from "../assets/img/gradiente_azul_rosa.webp";
+import img10 from "../assets/img/pieza_ajedrez.webp";
 
 const imagenes=[
         {
@@ -71,7 +70,7 @@ const imagenes=[
             prefix:"",
             suffix:"%",
             description: "Tasa de Éxito",
-            src: img5,
+            src: img3,
             alt: "Gradiente",
             dimensions: { width: "207px", height: "511px" },
             aspectRatio: 0.53,
@@ -169,12 +168,16 @@ const partners = [
 export default function PaidMediaSection(){
   const sectionRef = useRef(null);
   const isSectionVisible = useInView(sectionRef, { once: true, amount: 0.1 });
+  const [startCounters, setStartCounters] = useState(false);
+
 
   useEffect(() => {
     if (isSectionVisible) {
       setTimeout(() => {
         setStartCounters(true);
-      }, 100); // small pause before starting
+      }, 100); // pausa antes de empezar counter
+
+      return () => clearTimeout(timer);
     }
   }, [isSectionVisible]);
 
@@ -202,7 +205,6 @@ export default function PaidMediaSection(){
                     </div>
                 </div>
             </ImageListItem>
-
                 
             {imagenes.map((item) => (
             <ImageListItem key={item.id} >
@@ -244,7 +246,13 @@ export default function PaidMediaSection(){
                             md: "80px",   
                             lg: "100px",  }}}
                       >
-                      {item.prefix}<Counter value={item.value} start={isSectionVisible}/>{item.suffix}
+                      {item.value && (
+                        <>
+                          {item.prefix}
+                          <Counter value={item.value} start={startCounters} />
+                          {item.suffix}
+                        </>
+                      )}
                     </Box>
 
                     <Box
