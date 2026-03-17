@@ -14,19 +14,7 @@ import img8 from  "../assets/img/gradient_mas_a.png";
 import img9 from "../assets/img/gradiente_azul_rosa.png";
 import img10 from "../assets/img/pieza_ajedrez.png";
 
-export default function PaidMediaSection(){
-  const sectionRef = useRef(null);
-  const isSectionVisible = useInView(sectionRef, { once: true, amount: 0.1 });
-
-  useEffect(() => {
-    if (isSectionVisible) {
-      setTimeout(() => {
-        setStartCounters(true);
-      }, 100); // small pause before starting
-    }
-  }, [isSectionVisible]);
-
-  const imagenes=[
+const imagenes=[
         {
             id: 1,
             value: "200",
@@ -36,7 +24,7 @@ export default function PaidMediaSection(){
             src: img1,
             alt: "Gradiente",
             dimensions: { width: "214px", height: "273px" },
-            aspectRatio: "0.40",
+            aspectRatio: 0.40,
             pd:0,
             textAlign:"right",
             position:{bottom:"40%", right:"0px"},
@@ -50,7 +38,7 @@ export default function PaidMediaSection(){
             src: img2,
             alt: "Gradiente rosa morado",
             dimensions: { width: "214px", height: "273px" },
-            aspectRatio: "0.79",
+            aspectRatio: 0.79,
             pd:-118,
         },
         {
@@ -62,7 +50,7 @@ export default function PaidMediaSection(){
             src: img3,
             alt: "Gradiente",
             dimensions: { width: "214px", height: "273px" },
-            aspectRatio: "0.53",
+            aspectRatio: 0.53,
             pd:220,
         },
         {
@@ -74,7 +62,7 @@ export default function PaidMediaSection(){
             src: img4,
             alt: "Claqueta",
             dimensions: { width: "214px", height: "273px" },
-            aspectRatio: "0.78",
+            aspectRatio: 0.78,
             pd:0,
         },
         {
@@ -86,7 +74,7 @@ export default function PaidMediaSection(){
             src: img5,
             alt: "Gradiente",
             dimensions: { width: "207px", height: "511px" },
-            aspectRatio: "0.53",
+            aspectRatio: 0.53,
             pd:0,
             textAlign:"center",
             position:{bottom:"-5%", right:"0px"},
@@ -100,7 +88,7 @@ export default function PaidMediaSection(){
             src: img6,
             alt: "fondo transparente",
             dimensions: { width: "214px", height: "273px" },
-            aspectRatio: "0.66",
+            aspectRatio: 0.66,
             pd:0,
         },
         {
@@ -112,7 +100,7 @@ export default function PaidMediaSection(){
             src: img7,
             alt: "Gradiente rosa morado",
             dimensions: { width: "214px", height: "273px" },
-            aspectRatio: "0.40",
+            aspectRatio: 0.40,
             pd:0,
             textAlign:"center",
             position:{bottom:"50%", right:"0px"},
@@ -126,7 +114,7 @@ export default function PaidMediaSection(){
             src: img8,
             alt: "Gradiente mas a",
             dimensions: { width: "214px", height: "273px" },
-            aspectRatio: "0.56",
+            aspectRatio: 0.56,
             pd:0,
         },
         {
@@ -138,7 +126,7 @@ export default function PaidMediaSection(){
             src: img9,
             alt: "Gradiente azul rosa",
             dimensions: { width: "426px", height: "754px"},
-            aspectRatio: "0.40",
+            aspectRatio: 0.40,
             pd:40,
             textAlign:"right",
             position:{bottom:"80%", right:"0px"},
@@ -152,7 +140,7 @@ export default function PaidMediaSection(){
             src: img10,
             alt: "Pieza ajedrez emporium",
             dimensions: {height: "511px" },
-            aspectRatio: "0.42",
+            aspectRatio: 0.42,
             pd:0,
         },
         {
@@ -164,19 +152,31 @@ export default function PaidMediaSection(){
             src: img9,
             alt: "Gradiente",
             dimensions: {height: "511px"},
-            aspectRatio: "0.40",
+            aspectRatio: 0.40,
             pd:0,
             textAlign:"center",
             position:{bottom:"0%", left:"0px"},
         }
     ];
-    const partners = [
-      { name: "Atomik_", opacity: "text-[#ffffff80]" },
-      { name: "Kinesso_", opacity: "text-[#e4e4e4]" },
-      { name: "IPG_", opacity: "text-white" },
-      { name: "Opteam_", opacity: "text-[#e4e4e4]" },
-      { name: "Estudio Tess_", opacity: "text-[#ffffff80]" },
-    ];
+const partners = [
+  { name: "Atomik_", opacity: "text-[#ffffff80]" },
+  { name: "Kinesso_", opacity: "text-[#e4e4e4]" },
+  { name: "IPG_", opacity: "text-white" },
+  { name: "Opteam_", opacity: "text-[#e4e4e4]" },
+  { name: "Estudio Tess_", opacity: "text-[#ffffff80]" },
+];
+
+export default function PaidMediaSection(){
+  const sectionRef = useRef(null);
+  const isSectionVisible = useInView(sectionRef, { once: true, amount: 0.1 });
+
+  useEffect(() => {
+    if (isSectionVisible) {
+      setTimeout(() => {
+        setStartCounters(true);
+      }, 100); // small pause before starting
+    }
+  }, [isSectionVisible]);
 
     return <div className="section-wrapper flex-col justify-center items-center">
       <div className="w-full max-w-[1000px] px-8 mt-[61px] mb-[151px]" ref={sectionRef}>
@@ -190,7 +190,7 @@ export default function PaidMediaSection(){
                         display: 'block',
                         height: '350px',
                     }}></img>
-                    <h2 className="mt-[-1.00px] font-normal text-white text-[55px] leading-[px] lg:text-[90px] lg:leading-[90px] tracking-[0.26px] ">
+                    <h2 className="mt-[-1.00px] font-normal text-white text-[55px] lg:text-[90px] lg:leading-[90px] tracking-[0.26px] ">
                         Paid
                     </h2>
 
@@ -205,19 +205,21 @@ export default function PaidMediaSection(){
 
                 
             {imagenes.map((item) => (
-            <ImageListItem key={item.id} sx={{ pt: `${item.pd}px`}}>
+            <ImageListItem key={item.id} >
+              <Box sx={{ pt: `${item.pd}px` }}>
                 <Box sx={{ position: "relative" }}>
                   <img
                     src={item.src}
-                    alt={item.alt}
+                    alt={item.alt || ""}
                     loading="lazy"
+                    decoding="async"
                     style={{
                         display: 'block',
                         width: '100%',
-                        height: "auto",
                         aspectRatio: item.aspectRatio,
+                        objectFit: "cover",
                   }}
-                  />
+                  ></img>
                   <Typography
                     sx={{
                       position: "absolute",
@@ -225,7 +227,7 @@ export default function PaidMediaSection(){
                       borderRadius: "4px",
                       textAlign: item.textAlign,
                       fontFamily: "'Inter', sans-serif",
-                      ...item.position,
+                      ...(item.position || {}),
                     }}
                   >
                     <Box component="span" 
@@ -265,6 +267,7 @@ export default function PaidMediaSection(){
                     </Box>
                   </Typography>
                 </Box>
+              </Box>
             </ImageListItem>
             ))}
           </ImageList>
