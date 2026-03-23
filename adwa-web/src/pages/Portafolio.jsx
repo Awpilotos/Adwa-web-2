@@ -101,6 +101,7 @@ export default function Portafolio() {
                 muted
                 loop
                 playsInline
+                preload="none"
               />
               <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
@@ -144,6 +145,7 @@ export default function Portafolio() {
                 muted
                 loop
                 playsInline
+                preload="none"
               />
               <p className="text-white w-full text-[16px] lg:text-[20px]">
                 <span className="font-black block">Livin</span>
