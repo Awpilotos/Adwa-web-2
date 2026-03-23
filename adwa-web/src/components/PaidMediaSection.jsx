@@ -176,8 +176,6 @@ export default function PaidMediaSection(){
       setTimeout(() => {
         setStartCounters(true);
       }, 100); // pausa antes de empezar counter
-
-      return () => clearTimeout(timer);
     }
   }, [isSectionVisible]);
 
