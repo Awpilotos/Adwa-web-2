@@ -1,11 +1,13 @@
 @font-face {
-    font-family: Raleway;
-    src: url("../fonts/Raleway-Regular.ttf");
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url("../fonts/Inter-Regular.ttf");
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @import 'tailwindcss';
