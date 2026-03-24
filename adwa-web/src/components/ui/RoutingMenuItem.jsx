@@ -8,7 +8,7 @@ function RoutingMenuItem({path="/", label="", index}) {
   const isActive = location.pathname === path;
 
   const handleButtonClick = () => {
-    navigate(path); // Navigate to route
+    navigate(path); // Navega a la ruta
   };
 
   return (

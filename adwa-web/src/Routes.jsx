@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Nosotros from "./pages/Nosotros";
 import Portafolio from "./pages/Portafolio";
+import DisenoGrafico from "./pages/DisenoGrafico";
 
 export default function AppRoutes() {
   return (
@@ -10,6 +11,7 @@ export default function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/nosotros" element={<Nosotros />} />
       <Route path="/portafolio" element={<Portafolio />} />
+      <Route path="/diseno-grafico" element={<DisenoGrafico />}/>
     </Routes>
   );
 }
