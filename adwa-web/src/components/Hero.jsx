@@ -18,8 +18,8 @@ export default function Hero() {
         </span>
 
         <h1 className="text-[45px] leading-[55px] lg:text-[70px] lg:leading-[75px] font-normal">
-          TU ERES EL <br />
-          <span className="font-bold">PROTAGONISTA</span> <br />
+          TU ERES EL <br/>
+          <span className="font-bold">PROTAGONISTA</span> <br/>
           DE TU MARCA
         </h1>
 
