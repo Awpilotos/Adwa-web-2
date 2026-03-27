@@ -4,7 +4,7 @@ import dark_blue_gradient from "../assets/img/dark-blue-gradient.jpg";
 
 export default function Hero() {
   const { opacity, yOffset } = useScrollEffect(0.8, 120);
-  const VIDEO_URL = "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774392725/VideoBanner_s9atbj.mp4";
+  const VIDEO_URL = "https://res.cloudinary.com/dtoelcbzw/video/upload/f_auto,q_auto,vc_auto/v1774392725/VideoBanner_s9atbj.mp4";
 
   return (
     <div className="relative h-[200vh] mt-[-90px] bg-black">
@@ -12,7 +12,9 @@ export default function Hero() {
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         
         {/* VIDEO LAYER */}
-        <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+        <video autoPlay muted loop playsInline 
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          poster="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,f_auto,q_auto/v1774392725/VideoBanner_s9atbj.jpg">
           <source src={VIDEO_URL} type="video/mp4" />
         </video>
 
