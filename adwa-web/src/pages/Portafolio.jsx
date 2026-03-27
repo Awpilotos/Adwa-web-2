@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Footer2 from "../components/Footer2";
 
 import video_livin_wishlist from "../assets/videos/livin_wishlist.mp4";
 import video_livin from "../assets/videos/livin.mp4";
@@ -183,6 +183,6 @@ export default function Portafolio() {
           
         </div>
       </div>
-      <Footer/>
+      <Footer2/>
     </>);
 }
