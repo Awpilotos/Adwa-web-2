@@ -1,7 +1,9 @@
 import Card from "./ui/Card";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow} from 'swiper/modules';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -17,9 +19,11 @@ import prudi from "../assets/img/prudi.png";
 import negli_fondo from "../assets/img/negli_fondo.png";
 import negli from "../assets/img/negli.png";
 
-import { EffectCoverflow} from 'swiper/modules';
+
+
 
 export default function IASection(){
+    const navigate = useNavigate();
     const personajes=[
         {
             mainImage: distrax_fondo,
@@ -88,22 +92,7 @@ export default function IASection(){
     ];
 
     return <div className="section-wrapper-auto mb-20 justify-center">
-        <div className="section-container-large">
-            <h2 className="text-white text-[55px] leading-[55px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left">
-            La <span className="text-[#9700FF]"> IA </span>sin creatividad humana,
-                <span
-                    className="
-                    inline-block
-                    tracking-[0.26px]
-                    bg-gradient-to-r
-                    from-[#9700FF]
-                    to-[#00B79F]
-                    bg-clip-text
-                    text-transparent"
-                >
-                No conecta
-                </span>
-            </h2>
+        <div className="section-container-large -mt-20 md:-mt-25">
 
             <Swiper
             className="swiper-container"
@@ -150,9 +139,18 @@ export default function IASection(){
               </SwiperSlide>
             ))}
           </Swiper>
+
+            <div className="flex w-full justify-center mt-15">
+                <button 
+                    className="cursor-pointer px-6 py-3 rounded-[20px] text-white bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]"
+                    onClick={() => navigate("/portafolio")}>
+                Ver todos los proyectos 
+                </button>
+            </div>
+            
         </div>
         
-
+        
 
     </div>;
 }
