@@ -1,14 +1,4 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState } from 'react';
-
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import video_1 from '../assets/videos/adwa_showcase.mp4';
-import video_2 from "../assets/videos/incoop.mp4";
-import video_3 from '../assets/videos/livin_animado.mp4';
 
 import thumb1 from "../assets/thumbnails/adwa_showcase_thumb3.jpg";
 import thumb2 from "../assets/thumbnails/incoop_thumb.jpg";
@@ -21,34 +11,26 @@ export default function SpotSection() {
   const [activeVideo, setActiveVideo] = useState(null);
 
   const videos = [
-    { thumb: thumb1, src: video_1 },
-    { thumb: thumb2, src: video_2 },
-    { thumb: thumb3, src: video_3 },
-    { thumb: thumb1, src: video_1 },
-    { thumb: thumb2, src: video_2 },
-    { thumb: thumb3, src: video_3 },
+    { thumb: thumb1, src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452661/livin_animado_bxmeba.mp4"},
+    { thumb: thumb2, src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452933/incoop_ij10ld.mov"},
+    { thumb: thumb3, src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452661/livin_animado_bxmeba.mp4"},
+    { thumb: thumb1, src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452661/livin_animado_bxmeba.mp4"},
+    { thumb: thumb2, src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452933/incoop_ij10ld.mov"},
+    { thumb: thumb3, src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452661/livin_animado_bxmeba.mp4"},
   ];
   
   return (
-    <div className="section-wrapper-auto justify-center">
+    <div className="section-wrapper-auto justify-center md:-mt-60 lg:-mt-70">
       <div className="section-container-large">
         
-        <h2 className="text-white text-[55px] leading-[55px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left">
-          Spots
+        <h2 className="text-white text-[50px] leading-[50px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px]">
+          Nuestro <br />
+          <span className={`relative inline-block md:pl-25 lg:pl-40`}>
+            <span className="tracking-[0.26px] bg-gradient-to-r from-[#9700FF] to-[#00B79F] bg-clip-text text-transparent">
+              Trabajo
+            </span>
+          </span>
         </h2>
-        <h3
-          className="
-              inline-block
-              text-[60px] leading-[60px] lg:text-[80px] lg:leading-[80px]
-              tracking-[0.26px]
-              bg-gradient-to-r
-              from-[#9700FF]
-              to-[#00B79F]
-              bg-clip-text
-              text-transparent"
-        >
-            Publicitarios
-        </h3>
 
         <div className='container'>
           <VideoCarousel videos={videos}/>
