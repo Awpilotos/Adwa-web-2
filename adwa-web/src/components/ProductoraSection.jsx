@@ -1,30 +1,6 @@
 import video_4 from "../assets/videos/tras_camara_cortado.mp4";
-import MarqueeItem from "./ui/MarqueeItem";
-
-import btube from "../assets/img/2btube.png";
-import autoeastern from "../assets/img/autoeastern.png";
-import ciot from "../assets/img/ciot.png";
-import estudiotess from "../assets/img/estudiotess.png";
-import funkyfish from "../assets/img/funkyfish.png";
-import incoop from "../assets/img/incoop.png";
-import livin from "../assets/img/livin.png";
-import opteam from "../assets/img/opteam.png";
-import pical from "../assets/img/pical.png";
-import sg from "../assets/img/sg.png";
 
 export default function ProductoraSection(){
-    const images = [
-        btube,
-        autoeastern,
-        ciot,
-        estudiotess,
-        funkyfish,
-        incoop,
-        livin,
-        opteam,
-        pical,
-        sg,
-    ];
 
     return <div className="section-wrapper-auto flex-wrap justify-center items-center">
       <div className="relative section-container-large aspect-[1438/1729] sm:aspect-[1438/1300] flex justify-center items-center">
@@ -52,13 +28,15 @@ export default function ProductoraSection(){
                 clipPath="url(#videoClip)"
             >
             <video
-                src= {video_4}
+                className="w-full h-full object-cover"
+                controls
                 autoPlay
+                loop 
                 muted
-                loop
-                playsInline
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+                poster="https://res.cloudinary.com/dtoelcbzw/video/upload/f_auto,q_auto,so_auto/v1774476762/tras_camara_cortado_rcwjqu.jpg"
+                width="100%"
+                src="https://res.cloudinary.com/dtoelcbzw/video/upload/f_auto,q_auto,vc_auto/v1774476762/tras_camara_cortado_rcwjqu.mp4">
+            </video>
             </foreignObject>
         </svg>
 
@@ -76,11 +54,6 @@ export default function ProductoraSection(){
             Creativa
             </div>
         </div>
-
-        
-    </div>
-    <div className="bg-[#9700FF] sm:h-[150px] md:h-[200px] items-center justify-center flex mx-auto overflow-hidden select-none">
-      <MarqueeItem images={images} from={0} to={"-100%"} />
     </div>
 </div>;
 }
