@@ -2,24 +2,11 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
 import { Box, Modal, IconButton } from "@mui/material";
-import { Play } from "lucide-react";
-
-import "swiper/css";
-import "swiper/css/effect-coverflow";
+import { Play, X } from "lucide-react";
+import { useVideoModal } from "../../hooks/useVideoModal"; 
 
 export default function VideoCarousel({videos}) {
-  const [open, setOpen] = useState(false);
-  const [activeVideo, setActiveVideo] = useState(null);
-
-  const handleOpen = (video) => {
-    setActiveVideo(video);
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    setActiveVideo(null);
-  };
+  const { open, activeVideo, videoRef, handleOpen, handleClose } = useVideoModal();
 
   return (
     <>
@@ -46,13 +33,10 @@ export default function VideoCarousel({videos}) {
           <SwiperSlide key={i}>
             <Box sx={{ position: "relative", cursor: "pointer" }}>
               
-              <video
-                className="!w-[888px] !h-[500px] object-cover"
-                src={video.src}
-                muted
-                loop
-                playsInline
-                poster={video.thumb}
+              <img
+                className="!w-[888px] !h-[500px] object-cover rounded-lg"
+                src={video.thumb} 
+                alt="Preview"
               />
 
               {/* Boton de play sobre el video */}
@@ -94,17 +78,24 @@ export default function VideoCarousel({videos}) {
             outline: "none",
           }}
         >
+          <IconButton 
+            onClick={handleClose}
+            sx={{ position: 'absolute', top: -45, right: 0, color: 'white' }}
+          >
+            <X size={30} />
+          </IconButton>
+
           {activeVideo && (
-            <video
-              src={activeVideo}
-              controls
-              autoPlay
-              style={{
-                width: "100%",
-                height: "auto",
-                borderRadius: "8px",
-              }}
-            />
+            <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black shadow-2xl">
+              <video
+                ref={videoRef}
+                src={activeVideo}
+                controls
+                autoPlay
+                playsInline
+                className="w-full h-full object-contain"
+              />
+            </div>
           )}
         </Box>
       </Modal>
