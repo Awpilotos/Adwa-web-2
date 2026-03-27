@@ -16,6 +16,10 @@ export default function Navbar(){
         },
         { label: "Portafolio",
             path:"/portafolio",
+            children: [
+                { label: "Diseño", path: "/portafolio/diseno-grafico" },
+                { label: "UX/UI", path: "/portafolio/ux-ui" },
+            ]
         },
         { label: "Contacto",
             path:"",
