@@ -8,17 +8,17 @@ export default function Hero() {
 
   return (
     <div className="relative h-[200vh] mt-[-90px] bg-black">
-      {/* Container stays locked to top while scrolling the 200vh area */}
+      {/* Contenedor bloqueado hasta que se haga scroll en el area 200vh */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         
-        {/* VIDEO LAYER */}
-        <video autoPlay muted loop playsInline 
+        {/* Fondo de video */}
+        <video autoPlay muted loop playsInline
           className="absolute inset-0 w-full h-full object-cover z-0"
           poster="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,f_auto,q_auto/v1774392725/VideoBanner_s9atbj.jpg">
-          <source src={VIDEO_URL} type="video/mp4" />
+          <source src={VIDEO_URL} type="video/mp4"/>
         </video>
 
-        {/* GRADIENT OVERLAY (Controlled by Hook) */}
+        {/* Capa de fondo controlada por scroll hook */}
         <div 
           className="absolute inset-0 z-10 bg-cover bg-center" 
           style={{ 
@@ -27,11 +27,11 @@ export default function Hero() {
           }}
         />
 
-        {/* CONTENT (Controlled by Hook) */}
+        {/* Contenido principal controlado por scroll hook */}
         <div 
           className="relative z-20 w-full h-full flex flex-col items-center justify-center text-center text-white max-w-4xl mx-auto px-6 gap-10"
           style={{ 
-            opacity: opacity > 0.1 ? opacity * 1.2 : 0, // Fades in after initial scroll
+            opacity: opacity > 0.1 ? opacity * 1.2 : 0, // Desaparece luego de scroll incial
             transform: `translateY(${yOffset}px)` 
           }}
         >
@@ -50,13 +50,17 @@ export default function Hero() {
             comunicación auténtica y generamos un impacto<br className="hidden lg:block"/> medible en tu industria.
           </p>
 
-          <button className="px-6 py-3 rounded-[20px] bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]">
+          <a
+            href="https://api.whatsapp.com/send/?phone=593998115348&text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20gratuita"
+            className="inline-block cursor-pointer px-6 py-3 rounded-[20px] bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]"
+            target="_blank" rel="noopener noreferrer"
+          >
             Agenda una sesión gratuita
-          </button>
+          </a>
         </div>
       </div>
 
-      {/* This invisible box creates the scrollable space */}
+      {/* Contenedor oculto 200vh */}
       <div className="h-screen pointer-events-none" />
     </div>
   );
