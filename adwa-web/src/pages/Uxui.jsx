@@ -12,6 +12,9 @@ import autoeastern_mockup from "../assets/img/autoeastern_mockup.png";
 
 import niu_mockup from "../assets/img/niu_mockup.png";
 
+import sg_mockup from "../assets/img/sg_mockup.png";
+import sg_uxui_mockup from "../assets/img/sg_uxui_mockup.png";
+
 export default function Uxui() {
     const livinWebUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774597528/livin_web__qryp9t.mp4";
     const livinPosterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,q_auto,f_auto/v1774597528/livin_web__qryp9t.jpg";
@@ -21,6 +24,8 @@ export default function Uxui() {
     const autoWebUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774595944/autoeastern_web_x6ddxw.mov";
     const autoPosterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,q_auto,f_auto/v1774595944/autoeastern_web_x6ddxw.jpg";
     
+    const niuWebUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774595942/niu_web_y5hlrj.mov";
+    const niuPosterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,q_auto,f_auto/v1774595942/niu_web_y5hlrj.jpg";
     
     return (
         <>
@@ -68,7 +73,7 @@ export default function Uxui() {
                 </div>
                 
                 {/* Emporium section*/}
-                <div className="relative flex flex-col items-center lg:flex-row">
+                <div className="relative flex flex-col items-center lg:flex-row mt-8">
     
                     {/* Video (base layer) */}
                     <div className="w-full lg:w-1/2 ml-auto">
@@ -107,7 +112,7 @@ export default function Uxui() {
                 </div>
 
                 {/* AutoEastern section*/}
-                <div className="relative flex flex-col items-center lg:flex-row">
+                <div className="relative flex flex-col items-center lg:flex-row mt-8">
 
                     {/* Mockup (overlapping) */}
                     <img 
@@ -147,7 +152,7 @@ export default function Uxui() {
                 </div>
                 
                 {/* Niu section*/}
-                <div className="relative flex flex-col max-w-[90%] items-center lg:flex-row">
+                <div className="relative flex flex-col max-w-[90%] items-center lg:flex-row mt-8">
     
                     {/* Video (base layer) */}
                     <div className="w-full lg:w-[45%] ml-auto">
@@ -158,9 +163,9 @@ export default function Uxui() {
                             loop 
                             playsInline
                             preload="auto"
-                            poster={emporiumPosterUrl}
+                            poster={niuPosterUrl}
                         >
-                            <source src={emporiumWebUrl} type="video/mp4" />
+                            <source src={niuWebUrl} type="video/mp4" />
                         </video>
                     </div>
 
@@ -182,6 +187,40 @@ export default function Uxui() {
                     <h3 className="text-white font-semibold">Niu</h3>
                     <p className="text-white/70 mt-2">
                         Diseño y Desarrollo Web para Niu
+                    </p>
+                </div>
+
+
+                {/* SG section*/}
+                <div className="relative flex flex-col items-center lg:flex-row mt-8">
+
+                    {/* Image (overlapping) */}
+                    <img 
+                        src={sg_mockup} 
+                        alt="Emporium App"
+                        className="
+                            w-full lg:w-1/2 object-cover
+                            lg:absolute lg:right-0 lg:top-1/2
+                            lg:-translate-y-1/2
+                            lg:z-10
+                            lg:scale-120
+                        "
+                    />
+
+                    <div className="w-full lg:w-[50%] mr-auto">
+                        <img 
+                            className="w-full h-full object-cover"
+                            src={sg_uxui_mockup} 
+                            alt="Emporium App"
+                        />
+                    </div>
+                </div>
+                {/* Text */}
+                <div className="flex-1 text-center lg:text-left">
+                    <h3 className="text-white font-semibold">Auto-Eastern  S-Oil</h3>
+                    <p className="text-white/70 mt-2">
+                        
+                        Diseño y desarrollo web para Auto-Eastern, proveedor integral de soluciones automotrices en Ecuador.
                     </p>
                 </div>
 
