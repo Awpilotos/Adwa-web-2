@@ -147,10 +147,7 @@ export default function IASection(){
                 Ver todos los proyectos 
                 </button>
             </div>
-            
         </div>
-        
-        
-
+    
     </div>;
 }
