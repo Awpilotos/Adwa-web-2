@@ -34,17 +34,17 @@ export const footerData = {
     {
       id: "instagram",
       icon: instagram,
-      href: "#",
+      href: "https://www.instagram.com/adwaec",
     },
     {
       id: "linkedin",
       icon: linkedin,
-      href: "#",
+      href: "https://www.linkedin.com/company/adwaec/",
     },
     {
       id: "tiktok",
       icon: tiktok,
-      href: "#",
+      href: "https://www.tiktok.com/@adwaec",
     },
   ],
 

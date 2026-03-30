@@ -49,6 +49,8 @@ const Footer2 = () => {
                         <a
                             key={item.id}
                             href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition"
                         >
                             <img src={item.icon} alt={item.id} className="w-5 h-5" />
