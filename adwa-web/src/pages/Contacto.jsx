@@ -13,9 +13,8 @@ export default function Contacto() {
             {/* 1. THE GRADIENT COLUMN (Right 40%) */}
             <div className="absolute inset-y-0 left-0 w-[50%] md:w-[60%] lg:w-[28%] z-0 lg:ml-15
                             bg-[linear-gradient(180deg,rgba(152,16,250,0)_0%,rgba(90,9,148,0.45)_100%)]">
-                
-                {/* The 'A' Logo/Icon Aligned to the bottom of this column */}
-                <div className="absolute bottom-0 w-full flex justify-end pb-10 md:pb-[181px]">
+                                {/* The 'A' Logo/Icon Aligned to the bottom of this column */}
+                <div className="absolute bottom-0 w-full flex justify-end pb-20 md:pb-[181px]">
                     <img 
                     src={letra_a}
                     alt="Icon" 
@@ -64,12 +63,15 @@ export default function Contacto() {
                                     <a
                                         key={item.id}
                                         href={item.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition"
                                     >
                                         <img src={item.icon} alt={item.id} className="w-5 h-5" />
                                     </a>
                                 ))}
                             </div>
+                            
                         </div>
                     </div>
 
@@ -97,7 +99,13 @@ export default function Contacto() {
                 </div>
             </div>
         </div>
-        <Footer2 />
+
+        <div className="bg-[linear-gradient(90deg,#5A0994_0%,#1C032E_100%)]">
+            <div className="w-full border-t border-white/10 py-[15px] text-center text-xs text-white px-6">
+                <p>{footerData.copyright}</p>
+                <p className="mt-1">{footerData.tagline}</p>
+            </div>
+        </div>
         </>
         
     );
