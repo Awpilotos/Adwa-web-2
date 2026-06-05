@@ -51,7 +51,7 @@ export default function ProductoraSection(){
             [-webkit-text-fill-color:transparent]
             text-[60px] leading-[65px] lg:text-[95px] lg:leading-[100px] tracking-[0.26px]  font-normal"
             >
-            Creativa
+            CREATIVA
             </div>
         </div>
     </div>

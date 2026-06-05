@@ -1,8 +1,11 @@
 
 import background_gradient from "../assets/img/gradiente_azul_campanas.png";
 import mobile_mockup from "../assets/img/mobile-mockup.png";
+import { useNavigate } from "react-router-dom";
 
 export default function CampanaSection(){
+    const navigate = useNavigate();
+
     return (
     <div 
         className="section-wrapper justify-center mb-14"
@@ -33,7 +36,7 @@ export default function CampanaSection(){
                 </div>
             </div>
 
-            <div className="w-full mt-16 grid grid-cols-1 md:grid-cols-3 px-20 md:px-0">
+            <div className="w-full mt-16 grid grid-cols-1 md:grid-cols-3 px-8 md:px-0">
 
                 {/* COLUMN 1 */}
                 <div className="flex justify-center border-b md:border-b-0 md:border-r border-white/50 py-[25px]">
@@ -64,7 +67,8 @@ export default function CampanaSection(){
 
             {/*CTA */}
             <div className="w-full flex justify-center mt-16">
-                <button className=" text-white px-6 py-3 rounded-[20px] bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]">
+                <button className="cursor-pointer text-white px-6 py-3 rounded-[20px] bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]"
+                    onClick={() => navigate("/contacto")}>
                 Hablemos de tu proyecto
                 </button>
             </div>

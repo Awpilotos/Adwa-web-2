@@ -25,19 +25,12 @@ function RoutingMenuItem({path="/", label="", index}) {
 
         ${
           isActive
-            ? `backdrop-blur-[12px] backdrop-brightness-[108%] backdrop-saturate-[105%] backdrop-hue-rotate-[-3.6deg]
-               [-webkit-backdrop-filter:blur(12px)_brightness(108%)_saturate(105%)_hue-rotate(-3.6deg)]
-               shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]
-               bg-[linear-gradient(90deg,rgba(151,0,255,0.2)_37%,rgba(0,183,159,0.2)_100%)]`
+            ? `shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]
+               bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]`
             : ""
         }
-
-        hover:backdrop-blur-[12px]
-        hover:backdrop-brightness-[108%]
-        hover:backdrop-saturate-[105%]
-        hover:backdrop-hue-rotate-[-3.6deg]
         hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]
-        hover:bg-[linear-gradient(90deg,rgba(151,0,255,0.2)_37%,rgba(0,183,159,0.2)_100%)]
+        hover:bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]
       `}
     >
       {label}

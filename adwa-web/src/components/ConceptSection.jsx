@@ -29,7 +29,7 @@ export default function ConceptSection() {
                     {/* 2. THE CONTENT LAYER (Spans the full 100% width) */}
                     <div className="relative z-10 w-full flex flex-col mt-[104px] ml-10 mr-10 md:mr-0 mb-[180px]">
                         
-                        <h2 className="text-white text-4xl md:text-[40px] lg:text-[55px] leading-tight w-[90%]">
+                        <h2 className="text-white text-4xl md:text-[40px] lg:text-[55px] leading-tight md:leading-[42px] lg:leading-[56px] w-[90%]">
                             “La tecnología es solo una herramienta. <br/>
                             En manos de personas creativas,&nbsp;
                             <span className="tracking-[0.26px] bg-gradient-to-r from-[#9700FF] to-[#00B79F] bg-clip-text text-transparent font-medium">

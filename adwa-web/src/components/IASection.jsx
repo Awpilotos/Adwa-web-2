@@ -143,7 +143,7 @@ export default function IASection(){
             <div className="flex w-full justify-center mt-15">
                 <button 
                     className="cursor-pointer px-6 py-3 rounded-[20px] text-white bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]"
-                    onClick={() => navigate("/portafolio")}>
+                    onClick={() => navigate("/diseno-grafico")}>
                 Ver todos los proyectos 
                 </button>
             </div>

@@ -32,7 +32,7 @@ export default function Navbar2() {
     return (
         <div className="w-full sticky top-[33px] z-50 flex justify-center">
         
-        <nav className="flex px-4 py-2 w-full max-w-[425px] items-center justify-center bg-[#ffffff1a] rounded-[28px] backdrop-blur-[2.0px] shadow-[inset_1px_0_0_rgba(255,255,255,0.32),inset_-1px_0_1px_rgba(0,0,0,0.11)]">
+        <nav className="flex px-4 py-2 w-full max-w-[425px] items-center justify-center bg-[#ffffff1a] rounded-[28px] backdrop-blur-[4.0px] shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]">
             
             {navigationItems.map((item, index) => (
                 item.children ? (
@@ -56,13 +56,7 @@ export default function Navbar2() {
                                 rounded-2xl overflow-hidden
 
                                 bg-[#ffffff1a]
-                                backdrop-blur-[12px]
-                                backdrop-brightness-[108%]
-                                backdrop-saturate-[105%]
-                                backdrop-hue-rotate-[-3.6deg]
-                                [-webkit-backdrop-filter:blur(12px)_brightness(108%)_saturate(105%)_hue-rotate(-3.6deg)]
-
-                                shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]
+                                backdrop-blur-[30px] shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]
                             ">
                                 {item.children.map((child, i) => (
                                     <button
@@ -72,7 +66,7 @@ export default function Navbar2() {
                                             px-4 py-2 text-left text-white text-sm
                                             transition-all duration-300
 
-                                            hover:bg-[linear-gradient(90deg,rgba(151,0,255,0.2)_37%,rgba(0,183,159,0.2)_100%)]
+                                            hover:bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]
                                         "
                                         >
                                         {child.label}
@@ -96,18 +90,13 @@ export default function Navbar2() {
 
                                 ${
                                 isHomeActive
-                                    ? `backdrop-blur-[12px] backdrop-brightness-[108%] backdrop-saturate-[105%] backdrop-hue-rotate-[-3.6deg]
+                                    ? `backdrop-blur-[4.0px] backdrop-brightness-[108%] backdrop-saturate-[105%] backdrop-hue-rotate-[-3.6deg]
                                     shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]
-                                    bg-[linear-gradient(90deg,rgba(151,0,255,0.2)_37%,rgba(0,183,159,0.2)_100%)]`
+                                    bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]`
                                     : ""
                                 }
 
-                                hover:backdrop-blur-[12px]
-                                hover:backdrop-brightness-[108%]
-                                hover:backdrop-saturate-[105%]
-                                hover:backdrop-hue-rotate-[-3.6deg]
-                                hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.40),inset_1px_0_0_rgba(255,255,255,0.32),inset_0_-1px_8px_rgba(0,0,0,0.20),inset_-1px_0_8px_rgba(0,0,0,0.16)]
-                                hover:bg-[linear-gradient(90deg,rgba(151,0,255,0.2)_37%,rgba(0,183,159,0.2)_100%)]
+                                hover:bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]
                             `}
                             >
                             <img

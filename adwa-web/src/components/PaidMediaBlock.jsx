@@ -31,7 +31,7 @@ const PaidMediaBlock = React.memo(({ item }) => {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* TEXT (unchanged from your last correct version) */}
+      {/* TEXT */}
       {item.value && (
         <div
           className="absolute text-white whitespace-nowrap"

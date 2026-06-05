@@ -19,7 +19,7 @@ export const footerData = {
     {
       id: "phone",
       label: "Teléfono",
-      value: "+593 99 801 5134",
+      value: "+593 99 811 5348",
       icon: telefono,
     },
     {
