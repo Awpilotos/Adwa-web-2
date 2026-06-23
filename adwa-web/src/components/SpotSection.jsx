@@ -11,14 +11,14 @@ export default function SpotSection() {
   const [activeVideo, setActiveVideo] = useState(null);
 
   const videos = [
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_2,f_auto,q_auto/v1774452661/livin_animado_bxmeba.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452661/livin_animado_bxmeba.mp4"},
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_0/v1774452933/incoop_ij10ld.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452933/incoop_ij10ld.mov"},
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,f_auto,q_auto/v1774968081/inka_burguer_trailer_lq7c9h.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774968081/inka_burguer_trailer_lq7c9h.mp4"},
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_5/v1774968811/spartans_familia_lo0oto.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774968811/spartans_familia_lo0oto.mp4"},
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_2,f_auto,q_auto/v1774452661/livin_animado_bxmeba.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452661/livin_animado_bxmeba.mp4"},
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_0/v1774452933/incoop_ij10ld.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774452933/incoop_ij10ld.mov"},
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,f_auto,q_auto/v1774968081/inka_burguer_trailer_lq7c9h.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774968081/inka_burguer_trailer_lq7c9h.mp4"},
-    { thumb: "https://res.cloudinary.com/dtoelcbzw/video/upload/so_5/v1774968811/spartans_familia_lo0oto.jpg", src: "https://res.cloudinary.com/dtoelcbzw/video/upload/v1774968811/spartans_familia_lo0oto.mp4"}
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_2,f_auto,q_auto/v1782168181/livin_animado_bxmeba_qrzgcw.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168181/livin_animado_bxmeba_qrzgcw.mp4"},
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_0/v1782168179/incoop_ij10ld_zemeyi.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168179/incoop_ij10ld_zemeyi.mov"},
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_0,f_auto,q_auto/v1782168182/inka_burguer_trailer_lq7c9h_notdq1.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168182/inka_burguer_trailer_lq7c9h_notdq1.mp4"},
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_5/v1782168174/spartans_familia_lo0oto_fnunvv.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168174/spartans_familia_lo0oto_fnunvv.mp4"},
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_2,f_auto,q_auto/v1782168181/livin_animado_bxmeba_qrzgcw.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168181/livin_animado_bxmeba_qrzgcw.mp4"},
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_0/v1782168179/incoop_ij10ld_zemeyi.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168179/incoop_ij10ld_zemeyi.mov"},
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_0,f_auto,q_auto/v1782168182/inka_burguer_trailer_lq7c9h_notdq1.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168182/inka_burguer_trailer_lq7c9h_notdq1.mp4"},
+    { thumb: "https://res.cloudinary.com/dokleqkjv/video/upload/so_5/v1782168174/spartans_familia_lo0oto_fnunvv.jpg", src: "https://res.cloudinary.com/dokleqkjv/video/upload/v1782168174/spartans_familia_lo0oto_fnunvv.mp4"}
   ];
   
   return (

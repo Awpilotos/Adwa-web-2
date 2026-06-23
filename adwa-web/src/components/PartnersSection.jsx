@@ -43,7 +43,7 @@ export default function PartnersSection(){
 
                     {/* Right column */}
                     <div className="w-full md:w-[42%] flex items-end justify-center p-8 -mt-[20px] md:mt-0 md:p-[40px]">
-                        <p className="text-left text-white md:text-[16px] lg:text-[18px]">
+                        <p className="text-left text-white md:text-[16px] lg:text-[18px] leading-snug">
                         No nos limitamos a crear anuncios visualmente atractivos; nuestro objetivo principal es garantizar que cada campaña publicitaria tenga un propósito claro y contribuya a los objetivos comerciales de nuestros clientes.
                         </p>
                     </div>

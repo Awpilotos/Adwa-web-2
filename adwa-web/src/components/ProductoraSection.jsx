@@ -19,7 +19,7 @@ export default function ProductoraSection(){
             </clipPath>
             </defs>
 
-            {/* Video cortado con la forma del svg */}
+            {/* Video cortado */}
             <foreignObject
                 x="0"
                 y="0"
@@ -33,9 +33,9 @@ export default function ProductoraSection(){
                 autoPlay
                 loop 
                 muted
-                poster="https://res.cloudinary.com/dtoelcbzw/video/upload/f_auto,q_auto,so_auto/v1774476762/tras_camara_cortado_rcwjqu.jpg"
+                poster="https://res.cloudinary.com/dokleqkjv/video/upload/f_auto,q_auto,so_0/v1782226290/tras_camara_cortado_adwa_zymgu4.jpg"
                 width="100%"
-                src="https://res.cloudinary.com/dtoelcbzw/video/upload/f_auto,q_auto,vc_auto/v1774476762/tras_camara_cortado_rcwjqu.mp4">
+                src="https://res.cloudinary.com/dokleqkjv/video/upload/f_auto,q_auto,vc_auto/v1782226290/tras_camara_cortado_adwa_zymgu4.mp4">
             </video>
             </foreignObject>
         </svg>

@@ -16,22 +16,23 @@ import sg_mockup from "../assets/img/sg_mockup.png";
 import sg_uxui_mockup from "../assets/img/sg_uxui_mockup.png";
 
 export default function Uxui() {
-    const livinWebUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774597528/livin_web__qryp9t.mp4";
-    const livinPosterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,q_auto,f_auto/v1774597528/livin_web__qryp9t.jpg";
-    const emporiumWebUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774595943/emporium_web_dtuewn.mov";
-    const emporiumPosterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,q_auto,f_auto/v1774595943/emporium_web_dtuewn.jpg";
+    const livinWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230236/livin_web__qryp9t_jkczic.mp4";
+    const livinPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230236/livin_web__qryp9t_jkczic.jpg";
+
+    const emporiumWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230255/emporium_web_dtuewn_qmoenv.mov";
+    const emporiumPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230255/emporium_web_dtuewn_qmoenv.jpg";
     
-    const autoWebUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774595944/autoeastern_web_x6ddxw.mov";
-    const autoPosterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,q_auto,f_auto/v1774595944/autoeastern_web_x6ddxw.jpg";
+    const autoWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230263/autoeastern_web_x6ddxw_t17oie.mov";
+    const autoPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230263/autoeastern_web_x6ddxw_t17oie.jpg";
     
-    const niuWebUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774595942/niu_web_y5hlrj.mov";
-    const niuPosterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,q_auto,f_auto/v1774595942/niu_web_y5hlrj.jpg";
+    const niuWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230255/niu_web_y5hlrj_wzypwj.mov";
+    const niuPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230255/niu_web_y5hlrj_wzypwj.jpg";
     
     return (
         <>
         <Navbar2/>
         <HeroHeader 
-            title="Diseño" 
+            title="Diseño"
             highlightedText="UX UI"
             backgroundImage={gradient}
             containerHeight="min-h-[80dvh]"
@@ -66,16 +67,16 @@ export default function Uxui() {
                 </div>
                 {/* Text */}
                 <div className="flex-1 text-center lg:text-left">
-                    <h3 className="text-white font-semibold">Emporium</h3>
+                    <h3 className="text-white font-semibold">Livin</h3>
                     <p className="text-white/70 mt-2">
-                        Diseño y Desarrollo Web para Emporium
+                        Diseño y desarrollo Web para Livin, Broker de seguros 
                     </p>
                 </div>
                 
                 {/* Emporium section*/}
                 <div className="relative flex flex-col items-center lg:flex-row mt-8">
     
-                    {/* Video (base layer) */}
+                    {/* Video */}
                     <div className="w-full lg:w-1/2 ml-auto">
                         <video 
                             className="w-full h-full object-cover"
@@ -90,7 +91,7 @@ export default function Uxui() {
                         </video>
                     </div>
 
-                    {/* Mockup (overlapping) */}
+                    {/* Mockup */}
                     <img 
                         src={emporium_mockup} 
                         alt="Emporium App"
@@ -144,7 +145,7 @@ export default function Uxui() {
                 </div>
                 {/* Text */}
                 <div className="flex-1 text-center lg:text-left">
-                    <h3 className="text-white font-semibold">Auto-Eastern  S-Oil</h3>
+                    <h3 className="text-white font-semibold">Auto-Eastern S-Oil</h3>
                     <p className="text-white/70 mt-2">
                         
                         Diseño y desarrollo web para Auto-Eastern, proveedor integral de soluciones automotrices en Ecuador.
@@ -186,7 +187,7 @@ export default function Uxui() {
                 <div className="flex-1 text-center lg:text-left">
                     <h3 className="text-white font-semibold">Niu</h3>
                     <p className="text-white/70 mt-2">
-                        Diseño y Desarrollo Web para Niu
+                        Diseño y desarrollo web para Niu.
                     </p>
                 </div>
 

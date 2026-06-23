@@ -1,10 +1,12 @@
 
 import background_gradient from "../assets/img/gradiente_azul_campanas.png";
-import mobile_mockup from "../assets/img/mobile-mockup.png";
+import mockup_frameUrl from "../assets/img/mobile_mockup_op.png";
 import { useNavigate } from "react-router-dom";
 
 export default function CampanaSection(){
     const navigate = useNavigate();
+    const mockup_videoUrl = "https://res.cloudinary.com/dokleqkjv/video/upload/v1782226783/building_freedom_adwa_nil61u.mp4";
+    const mockup_posterUrl = "https://res.cloudinary.com/dokleqkjv/video/upload/so_0/v1782226783/building_freedom_adwa_nil61u.jpg";
 
     return (
     <div 
@@ -27,12 +29,24 @@ export default function CampanaSection(){
                 </span>
                 </h2>
 
-                <div className="flex justify-center items-center">
-                <img 
-                    src={mobile_mockup}
-                    alt="Campaña" 
-                    className="max-w-full h-auto object-contain"
-                />
+                <div className="relative flex justify-center items-center pl-[0.4%] pt-[0.6%] pr-[0.4%] pb-[0.6%]">
+                    <video 
+                        className="w-[100%] h-[100%] object-cover rounded-[50px] z-10"
+                        autoPlay
+                        muted 
+                        loop
+                        playsInline 
+                        preload="auto"
+                        poster={mockup_posterUrl}
+                    >
+                        <source src={mockup_videoUrl} type="video/mp4"/>
+                    </video>
+
+                    <img
+                        src={mockup_frameUrl}
+                        alt="Device Mockup"
+                        className="absolute inset-0 w-full h-full pointer-events-none"
+                    />
                 </div>
             </div>
 

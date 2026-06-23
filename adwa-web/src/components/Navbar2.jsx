@@ -13,7 +13,7 @@ export default function Navbar2() {
             path:"/",
         },
         { label: "Nosotros",
-            path:"/nosotros",
+            path:"",
         },
         { label: "Portafolio",
             path:"",

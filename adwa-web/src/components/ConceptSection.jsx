@@ -3,8 +3,8 @@ import React from "react";
 import letra_a from "../assets/img/letra_a.png";
 
 export default function ConceptSection() {
-    const videoUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/q_auto,f_auto/v1774463821/adwito_halloween_vo5hgw.mp4";
-    const posterUrl="https://res.cloudinary.com/dtoelcbzw/video/upload/so_0,f_auto,q_auto/v1774463821/adwito_halloween_vo5hgw.jpg";
+    const videoUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782165379/Concept_adwito_halloween_adwa_xij2u0.mp4";
+    const posterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,f_auto,q_auto/v1782165379/Concept_adwito_halloween_adwa_xij2u0.jpg";
 
     return (<>
         <div className="section-wrapper-auto justify-center">
@@ -37,7 +37,7 @@ export default function ConceptSection() {
                             </span>
                         </h2>
                         
-                        <p className="text-white mt-10 max-w-[550px] text-[16px] md:text-[20px] leading-relaxed opacity-80">
+                        <p className="text-white mt-10 max-w-[550px] text-[16px] md:text-[20px] leading-snug opacity-80">
                             Nos aseguramos de que cada concepto creativo tenga un respaldo estratégico sólido, 
                             que se alinee con los valores de tu marca y genere resultados significativos.
                         </p>

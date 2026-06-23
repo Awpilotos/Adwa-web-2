@@ -19,9 +19,6 @@ import prudi from "../assets/img/prudi.png";
 import negli_fondo from "../assets/img/negli_fondo.png";
 import negli from "../assets/img/negli.png";
 
-
-
-
 export default function IASection(){
     const navigate = useNavigate();
     const personajes=[
