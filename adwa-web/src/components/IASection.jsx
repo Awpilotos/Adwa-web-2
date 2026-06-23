@@ -1,14 +1,17 @@
 import Card from "./ui/Card";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow} from 'swiper/modules';
-import { useState } from 'react';
+import { EffectCoverflow } from 'swiper/modules';
+import { useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+
+import arrowRight from "../assets/img/arrow-right-cropped.svg";
+import arrowLeft from "../assets/img/arrow-left-cropped.svg";
 
 import distrax_fondo from "../assets/img/distrax_fondo.png";
 import distrax from "../assets/img/distrax.png";
@@ -21,6 +24,7 @@ import negli from "../assets/img/negli.png";
 
 export default function IASection(){
     const navigate = useNavigate();
+    const swiperRef = useRef(null);
     const personajes=[
         {
             mainImage: distrax_fondo,
@@ -91,6 +95,14 @@ export default function IASection(){
     return <div className="section-wrapper-auto mb-20 justify-center">
         <div className="section-container-large -mt-20 md:-mt-25">
 
+            <div className="relative flex items-center justify-center">
+            <button
+                onClick={() => swiperRef.current?.slidePrev()}
+                className="absolute left-2 md:left-[80px] md:top-[60%] md:-translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-transform"
+            >
+                <img src={arrowLeft} alt="Previous" width={40} height={40} />
+            </button>
+
             <Swiper
             className="swiper-container"
             effect="coverflow"
@@ -120,6 +132,7 @@ export default function IASection(){
                 spaceBetween: 125,
                 },
             }}
+            onSwiper={(swiper) => { swiperRef.current = swiper; }}
             modules={[EffectCoverflow]}
             style={{ width: "90%", maxWidth: "1400"}}
           > 
@@ -136,6 +149,14 @@ export default function IASection(){
               </SwiperSlide>
             ))}
           </Swiper>
+
+            <button
+                onClick={() => swiperRef.current?.slideNext()}
+                className="absolute right-2 md:right-[80px] md:top-[60%] md:-translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-transform"
+            >
+                <img src={arrowRight} alt="Next" width={40} height={40} />
+            </button>
+            </div>
 
             <div className="flex w-full justify-center mt-15">
                 <button 
