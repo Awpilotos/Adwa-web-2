@@ -20,7 +20,6 @@ export default function CampanaSection(){
     >
         <div className="section-container-large flex flex-col items-center">
 
-            {/* Título */}
             <div className="w-full flex flex-col md:flex-row items-center justify-between mt-[100px] gap-12">
                 <h2 className="text-white text-[50px] leading-[50px] lg:text-[80px] lg:leading-[80px] tracking-[0.26px] text-left">
                 De ideas a<br/>
@@ -30,8 +29,8 @@ export default function CampanaSection(){
                 </h2>
 
                 <div className="relative flex justify-center items-center pl-[0.4%] pt-[0.6%] pr-[0.4%] pb-[0.6%]">
-                    <video 
-                        className="w-[100%] h-[100%] object-cover rounded-[50px] z-10"
+                    <video
+                        className="w-[100%] h-[100%] object-cover z-10 rounded-[clamp(30px,9vw,55px)] md:rounded-[clamp(20px,3.5vw,50px)]"
                         autoPlay
                         muted 
                         loop
@@ -79,7 +78,7 @@ export default function CampanaSection(){
             </div>
            
 
-            {/*CTA */}
+            {/* CTA */}
             <div className="w-full flex justify-center mt-16">
                 <button className="cursor-pointer text-white px-6 py-3 rounded-[20px] bg-[linear-gradient(90deg,rgba(151,0,255,1)_37%,rgba(0,183,159,1)_100%)]"
                     onClick={() => navigate("/contacto")}>
