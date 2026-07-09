@@ -4,7 +4,7 @@ import dark_blue_gradient from "../assets/img/dark-blue-gradient.jpg";
 
 export default function Hero() {
   const { opacity, yOffset } = useScrollEffect(0.8, 120);
-  const VIDEO_URL = "https://res.cloudinary.com/dokleqkjv/video/upload/f_auto,q_auto,vc_auto/v1782165370/Hero_VideoBanner_adwa_kzgvz9.mp4";
+  const VIDEO_URL = "https://res.cloudinary.com/a2t82uyl/video/upload/f_auto,q_auto,vc_auto/v1783615576/Hero_VideoBanner_adwa_plhnx8.mp4";
 
   return (
     <div className="relative h-[200vh] mt-[-90px] bg-black">
@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Fondo de video */}
         <video autoPlay muted loop playsInline
           className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,f_auto,q_auto/v1782165370/Hero_VideoBanner_adwa_kzgvz9.jpg">
+          poster="https://res.cloudinary.com/a2t82uyl/video/upload/so_0,f_auto,q_auto/v1783615576/Hero_VideoBanner_adwa_plhnx8.jpg">
           <source src={VIDEO_URL} type="video/mp4"/>
         </video>
 

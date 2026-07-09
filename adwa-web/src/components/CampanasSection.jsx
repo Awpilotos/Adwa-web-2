@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function CampanaSection(){
     const navigate = useNavigate();
-    const mockup_videoUrl = "https://res.cloudinary.com/dokleqkjv/video/upload/v1782226783/building_freedom_adwa_nil61u.mp4";
-    const mockup_posterUrl = "https://res.cloudinary.com/dokleqkjv/video/upload/so_0/v1782226783/building_freedom_adwa_nil61u.jpg";
+    const mockup_videoUrl = "https://res.cloudinary.com/a2t82uyl/video/upload/v1783615574/building_freedom_adwa_mv577x.mp4";
+    const mockup_posterUrl = "https://res.cloudinary.com/a2t82uyl/video/upload/so_0/v1783615574/building_freedom_adwa_mv577x.jpg";
 
     return (
     <div 

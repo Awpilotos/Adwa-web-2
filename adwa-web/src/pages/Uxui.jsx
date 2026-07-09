@@ -16,17 +16,17 @@ import sg_mockup from "../assets/img/sg_mockup.png";
 import sg_uxui_mockup from "../assets/img/sg_uxui_mockup.png";
 
 export default function Uxui() {
-    const livinWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230236/livin_web__qryp9t_jkczic.mp4";
-    const livinPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230236/livin_web__qryp9t_jkczic.jpg";
+    const livinWebUrl="https://res.cloudinary.com/a2t82uyl/video/upload/q_auto,f_auto/v1783615582/livin_web__qryp9t_xmzaxw.mp4";
+    const livinPosterUrl="https://res.cloudinary.com/a2t82uyl/video/upload/so_0,q_auto,f_auto/v1783615582/livin_web__qryp9t_xmzaxw.jpg";
 
-    const emporiumWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230255/emporium_web_dtuewn_qmoenv.mov";
-    const emporiumPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230255/emporium_web_dtuewn_qmoenv.jpg";
-    
-    const autoWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230263/autoeastern_web_x6ddxw_t17oie.mov";
-    const autoPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230263/autoeastern_web_x6ddxw_t17oie.jpg";
-    
-    const niuWebUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782230255/niu_web_y5hlrj_wzypwj.mov";
-    const niuPosterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,q_auto,f_auto/v1782230255/niu_web_y5hlrj_wzypwj.jpg";
+    const emporiumWebUrl="https://res.cloudinary.com/a2t82uyl/video/upload/q_auto,f_auto/v1783615615/emporium_web_dtuewn_dhn1u8.mov";
+    const emporiumPosterUrl="https://res.cloudinary.com/a2t82uyl/video/upload/so_0,q_auto,f_auto/v1783615615/emporium_web_dtuewn_dhn1u8.jpg";
+
+    const autoWebUrl="https://res.cloudinary.com/a2t82uyl/video/upload/q_auto,f_auto/v1783615614/autoeastern_web_x6ddxw_ton2d4.mov";
+    const autoPosterUrl="https://res.cloudinary.com/a2t82uyl/video/upload/so_0,q_auto,f_auto/v1783615614/autoeastern_web_x6ddxw_ton2d4.jpg";
+
+    const niuWebUrl="https://res.cloudinary.com/a2t82uyl/video/upload/q_auto,f_auto/v1783615605/niu_web_y5hlrj_r1yihs.mov";
+    const niuPosterUrl="https://res.cloudinary.com/a2t82uyl/video/upload/so_0,q_auto,f_auto/v1783615605/niu_web_y5hlrj_r1yihs.jpg";
     
     return (
         <>

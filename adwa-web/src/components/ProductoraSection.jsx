@@ -33,9 +33,9 @@ export default function ProductoraSection(){
                 autoPlay
                 loop 
                 muted
-                poster="https://res.cloudinary.com/dokleqkjv/video/upload/f_auto,q_auto,so_0/v1782226290/tras_camara_cortado_adwa_zymgu4.jpg"
+                poster="https://res.cloudinary.com/a2t82uyl/video/upload/f_auto,q_auto,so_0/v1783615586/tras_camara_cortado_adwa_or8smx.jpg"
                 width="100%"
-                src="https://res.cloudinary.com/dokleqkjv/video/upload/f_auto,q_auto,vc_auto/v1782226290/tras_camara_cortado_adwa_zymgu4.mp4">
+                src="https://res.cloudinary.com/a2t82uyl/video/upload/f_auto,q_auto,vc_auto/v1783615586/tras_camara_cortado_adwa_or8smx.mp4">
             </video>
             </foreignObject>
         </svg>

@@ -3,8 +3,8 @@ import React from "react";
 import letra_a from "../assets/img/letra_a.png";
 
 export default function ConceptSection() {
-    const videoUrl="https://res.cloudinary.com/dokleqkjv/video/upload/q_auto,f_auto/v1782165379/Concept_adwito_halloween_adwa_xij2u0.mp4";
-    const posterUrl="https://res.cloudinary.com/dokleqkjv/video/upload/so_0,f_auto,q_auto/v1782165379/Concept_adwito_halloween_adwa_xij2u0.jpg";
+    const videoUrl="https://res.cloudinary.com/a2t82uyl/video/upload/q_auto,f_auto/v1783615601/Concept_adwito_halloween_adwa_myzo2v.mp4";
+    const posterUrl="https://res.cloudinary.com/a2t82uyl/video/upload/so_0,f_auto,q_auto/v1783615601/Concept_adwito_halloween_adwa_myzo2v.jpg";
 
     return (<>
         <div className="section-wrapper-auto justify-center">
